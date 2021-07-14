@@ -1,0 +1,4 @@
+[submodule "react-native-themes/demos/showcase"]
+	path = react-native-themes/demos/showcase
+	url = https://github.com/pxblue/react-native-showcase-demo
+	branch = dev

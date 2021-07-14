@@ -20,12 +20,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/themes.git"
+        "url": "git+https://github.com/pxblue/react-native-themes.git"
     },
     "bugs": {
-        "url": "https://github.com/pxblue/themes/issues"
+        "url": "https://github.com/pxblue/react-native-themes/issues"
     },
-    "homepage": "https://github.com/pxblue/themes/tree/master/react-native",
+    "homepage": "https://github.com/pxblue/react-native-themes/tree/master",
     "keywords": [
         "PXBlue",
         "themes",
