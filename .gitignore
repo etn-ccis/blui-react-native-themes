@@ -9,7 +9,7 @@
 
 # production
 /build
-react-native/dist
+/dist
 
 # misc
 **/**/.DS_Store
