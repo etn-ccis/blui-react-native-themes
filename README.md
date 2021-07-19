@@ -1,6 +1,6 @@
 # PX Blue themes for React Native applications
 [![](https://img.shields.io/circleci/project/github/pxblue/react-native-themes/master.svg?style=flat)](https://circleci.com/gh/pxblue/react-native-themes/tree/master)
-![npm](https://img.shields.io/npm/v/@pxblue/react-native-themes?label=%40pxblue%2Freact-native-themes)
+[![](https://img.shields.io/npm/v/@pxblue/react-native-themes.svg?label=@pxblue/react-native-themes&style=flat)](https://www.npmjs.com/package/@pxblue/react-native-themes)
 
 This package provides theming support for Eaton applications using the PX Blue design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
 
