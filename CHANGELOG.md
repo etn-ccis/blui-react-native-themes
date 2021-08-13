@@ -1,5 +1,15 @@
 # Changelog
 
+## v6.0.0 (Unpublished)
+
+### Added
+
+-   Many new theme color properties to give greater control over the styles of various components. Note that the global ReactNativePaper namespace will need to be updated in your application to use these properties.
+
+### Removed
+-   The `blueDarkAlt` theme has been consolidated into the `blueDark` theme and a selection of wrapper components in the `@pxblue/react-native-components` library. This eliminates the need for using two theme providers and writing your own wrappers for these components.
+-   `theme.colors.textSecondary` — use `theme.colors.textPalette.secondary` instead.
+
 ## v5.1.0 (March 30, 2021)
 
 ### Added
