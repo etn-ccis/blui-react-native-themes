@@ -9,9 +9,11 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 import { blue, black, lightBlue } from '@pxblue/colors';
 import { blueDarkTheme } from './blueDarkTheme';
 
-  /**
-     * @deprecated in version 6.0.0
-     */
+console.warn('blueDarkAlt theme will be deprecated in v6.0.0, use blueDark theme');
+
+/** 
+ * @deprecated in v6.0.0 use blueDark theme
+ */
 export const blueDarkAltTheme = {
     ...blueDarkTheme,
     colors: {
