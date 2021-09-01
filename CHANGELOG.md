@@ -1,5 +1,11 @@
 # Changelog
 
+## v5.2.0 (September 1, 2021)
+
+### Added
+
+-   blueDarkAlt theme deprecation notice.
+
 ## v5.1.0 (March 30, 2021)
 
 ### Added
