@@ -5,8 +5,9 @@ All rights reserved.
 
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
-export { blueTheme as blue } from './blueTheme';
-export { blueDarkTheme as blueDark } from './blueDarkTheme';
+export { blueTheme as blue } from "./blueTheme";
+export { blueDarkTheme as blueDark } from "./blueDarkTheme";
+import { $DeepPartial } from "@callstack/react-theme-provider";
 
 // This will still need to be added to an end-user project if they want to access these properties without typescript yelling at them.
 declare global {
@@ -14,7 +15,6 @@ declare global {
     namespace ReactNativePaper {
         // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
         interface ThemeColors {
-            primaryBase: string;
             primaryPalette: {
                 light: string;
                 main: string;
@@ -39,17 +39,15 @@ declare global {
                     main: string;
                     dark: string;
                 };
-                highlight: string;
                 disabled: string;
-                hint: string;
             };
             actionPalette: {
-                hover: string;
                 active: string;
                 background: string;
                 disabled: string;
                 disabledBackground: string;
             };
+            overrides: $DeepPartial<ThemeOverrides>;
         }
         // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
         interface ThemeFonts {
@@ -57,3 +55,36 @@ declare global {
         }
     }
 }
+
+export type ThemeOverrides = {
+    avatar: {
+        background: string;
+    };
+
+    bottomNavigation: {
+        inactive: string;
+    };
+    button: {
+        contained: {
+            text: {
+                disabled: string;
+            };
+        };
+    };
+    chip: {
+        outlined: {
+            background: string;
+        };
+        flat: {
+            background: string;
+        };
+    };
+    snackbar: {
+        accent: string;
+    };
+    toggleButtonGroup: {
+        checked: {
+            background: string;
+        };
+    };
+};
