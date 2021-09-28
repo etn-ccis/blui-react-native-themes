@@ -10,6 +10,13 @@ import { configureFonts, DefaultTheme } from "react-native-paper";
 import { blue, red, darkBlack, black, white, lightBlue } from "@pxblue/colors";
 import { fontConfig } from "./shared";
 import Color from "color";
+import { ThemeOpacity } from ".";
+
+const themeOpacity: ThemeOpacity = {
+    disabled: 0.36,
+    divider: 0.36,
+    disabledBackground: 0.24,
+};
 
 export const blueDarkTheme: ReactNativePaper.Theme = {
     ...DefaultTheme,
@@ -42,7 +49,7 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
             main: red[200],
             dark: red[500],
         },
-        divider: Color(black[200]).alpha(0.36).string(),
+        divider: Color(black[200]).alpha(themeOpacity.divider).string(),
         background: darkBlack[800],
         surface: black[900],
         text: black[50],
@@ -61,10 +68,12 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
         actionPalette: {
             active: black[500],
             background: black[800],
-            disabled: Color(black[300]).alpha(0.36).string(),
-            disabledBackground: Color(black[200]).alpha(0.24).string(),
+            disabled: Color(black[300]).alpha(themeOpacity.disabled).string(),
+            disabledBackground: Color(black[200])
+                .alpha(themeOpacity.disabledBackground)
+                .string(),
         },
-        disabled: Color(black[300]).alpha(0.36).string(),
+        disabled: Color(black[300]).alpha(themeOpacity.disabled).string(),
         notification: lightBlue[200],
 
         overrides: {

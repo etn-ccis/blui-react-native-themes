@@ -10,6 +10,13 @@ import { configureFonts, DefaultTheme } from "react-native-paper";
 import { blue, red, black, gray, lightBlue, white } from "@pxblue/colors";
 import { fontConfig } from "./shared";
 import Color from "color";
+import { ThemeOpacity } from ".";
+
+const themeOpacity: ThemeOpacity = {
+    disabled: 0.3,
+    divider: 0.36,
+    disabledBackground: 0.24,
+};
 
 export const blueTheme: ReactNativePaper.Theme = {
     ...DefaultTheme,
@@ -42,7 +49,7 @@ export const blueTheme: ReactNativePaper.Theme = {
             main: red[500],
             dark: red[700],
         },
-        divider: Color(black[200]).alpha(0.36).string(),
+        divider: Color(black[200]).alpha(themeOpacity.divider).string(),
         background: white[200],
         surface: white[50],
         text: black[500],
@@ -56,15 +63,17 @@ export const blueTheme: ReactNativePaper.Theme = {
                 main: white[50],
                 dark: white[50],
             },
-            disabled: Color(black[500]).alpha(0.3).string(),
+            disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
         },
         actionPalette: {
             active: gray[500],
             background: white[500],
-            disabled: Color(black[500]).alpha(0.3).string(),
-            disabledBackground: Color(black[200]).alpha(0.24).string(),
+            disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
+            disabledBackground: Color(black[200])
+                .alpha(themeOpacity.disabledBackground)
+                .string(),
         },
-        disabled: Color(black[500]).alpha(0.3).string(),
+        disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
         notification: lightBlue[500],
         overrides: {
             snackbar: {

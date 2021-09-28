@@ -88,3 +88,9 @@ export type ThemeOverrides = {
         };
     };
 };
+
+export type ThemeOpacity = {
+    disabled: number;
+    divider: number;
+    disabledBackground: number;
+};
