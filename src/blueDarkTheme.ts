@@ -8,14 +8,14 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 
 import { configureFonts, DefaultTheme } from "react-native-paper";
 import { blue, red, darkBlack, black, white, lightBlue } from "@pxblue/colors";
-import { fontConfig } from "./shared";
+import { fontConfig, ThemeOpacity } from "./shared";
 import Color from "color";
-import { ThemeOpacity } from ".";
 
 const themeOpacity: ThemeOpacity = {
     disabled: 0.36,
     divider: 0.36,
     disabledBackground: 0.24,
+    actionOpacity: 0.1,
 };
 
 export const blueDarkTheme: ReactNativePaper.Theme = {
@@ -75,15 +75,14 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
         },
         disabled: Color(black[300]).alpha(themeOpacity.disabled).string(),
         notification: lightBlue[200],
-
+        opacity: themeOpacity,
         overrides: {
             avatar: {
-                background: Color(black[50]).alpha(0.1).string(),
+                background: Color(black[50])
+                    .alpha(themeOpacity.actionOpacity)
+                    .string(),
             },
             chip: {
-                outlined: {
-                    background: Color(black[200]).alpha(0.2).string(),
-                },
                 flat: {
                     background: black[500],
                 },
