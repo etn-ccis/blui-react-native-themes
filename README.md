@@ -1,4 +1,5 @@
 # PX Blue themes for React Native applications
+
 [![](https://img.shields.io/circleci/project/github/pxblue/react-native-themes/master.svg?style=flat)](https://circleci.com/gh/pxblue/react-native-themes/tree/master)
 [![](https://img.shields.io/npm/v/@pxblue/react-native-themes.svg?label=@pxblue/react-native-themes&style=flat)](https://www.npmjs.com/package/@pxblue/react-native-themes)
 
@@ -45,9 +46,7 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 
 ### Dark Theme
 
-The theming mechanism for React Native Paper is a bit limited in the amount of customization available for components. Because of this, there are two dark themes available from PX Blue that should be applied to different components.
-
-The main theme should be applied using a `Provider` that wraps your application and passing in the theme (`blueDark`). This will be applied to the majority of the component in the RNP library.
+To use the light theme in your application, simply wrap the app in a `Provider` and pass in your desired theme (`blueDark`).
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
@@ -58,111 +57,11 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 </ThemeProvider>
 ```
 
-#### Alternate Dark Theme
+### React Native Paper Wrapper Components
 
-The alternate dark theme (`blueDarkAlt`) should be applied to select components to give them the desired PX Blue styling. The following components should use the alternate dark theme:
+The theming mechanism for React Native Paper is a bit limited in the amount of customization available for components. Because of this, we updated the `ThemeColors` interface and created wrapper components to use in place of the standard React Native Paper components.
 
--   Activity Indicator
--   Appbar
--   Avatar
--   Badge
--   Bottom Navigation
--   Button (`contained` mode variant)
--   FAB
--   ProgressBar
--   Snackbar
--   TextInput
-
-![Dark Theme Infographic](https://raw.githubusercontent.com/pxblue/themes/master/react-native/assets/dark-theme-infographic.png)
-
-1. For these components, make sure you are using the darkThemeAlt.
-2. Do not use the darkTheme or these components will render using the incorrect color scheme.
-
-##### One-Off Usage
-
-If you are only using a component from this list once or twice in your application, you can pass the alternate theme directly to the component through the `theme` prop.
-
-```tsx
-import { useTheme } from 'react-native-paper';
-import { blueDarkAlt } from '@pxblue/react-native-themes';
-const theme = useTheme();
-...
-<Badge size={24} visible theme={theme.dark ? blueDarkAlt : {}}></Badge>
-```
-
-##### Component-Based Usage
-
-If you are using components frequently, it's best to create a wrapper component that will handle the alternate theme logic. This will allow you to keep your code more readable and avoid errors with inconsistent theme application.
-
-To do this, you define a wrapper component that acts as a pass-through for all of the default props and adds the theme logic.
-
-```tsx
-import React from 'react';
-import { blueDarkAlt } from '@pxblue/react-native-themes';
-import { SomeComponent as PaperComponent, useTheme } from 'react-native-paper';
-...
-export const SomeComponent: typeof PaperComponent = (props) => {
-    const theme = useTheme(props.theme);
-    return (
-        <PaperComponent
-            {...props}
-            theme={
-                theme.dark
-                ? Object.assign({}, blueDarkAlt, props.theme)
-                : {}
-            }
-        />
-    );
-};
-```
-
-You would then use your custom wrapper component throughout your application instead of using the component directly from React Native Paper:
-
-```tsx
-import { SomeComponent } from './path/to/SomeComponent';
-...
-<SomeComponent {...samePropsAsThePaperComponent} />
-```
-
-The `Button` component is a special case that requires the alternate theme only if you are using the contained mode. The wrapper component for the `Button` should look like:
-
-```tsx
-import React from 'react';
-import { blueDarkAlt } from '@pxblue/react-native-themes';
-import { Button, useTheme } from 'react-native-paper';
-...
-export const MyCustomButton: typeof Button = (props) => {
-    const theme = useTheme(props.theme);
-    return (
-        <Button
-            {...props}
-            theme={
-                props.mode === 'contained' && theme.dark
-                    ? Object.assign({}, blueDarkAlt, props.theme)
-                    : {}
-            }
-        />
-    );
-};
-```
-
-The `TextInput` component is a special case that requires usage of both `blueDark` and `blueDarkAlt` themes. The wrapper component for the `TextInput` should look like:
-
-```tsx
-import { blueDark, blueDarkAlt } from '@pxblue/react-native-themes';
-import { TextInput, useTheme } from 'react-native-paper';
-import _clonedeep from 'lodash.clonedeep';
-
-export const MyCustomTextInput: typeof TextInput = (props) => {
-    const theme = useTheme(props.theme);
-    const darkTheme = _clonedeep(blueDarkAlt);
-    darkTheme.colors.primary = blueDark.colors.primary;
-
-    return <TextInput {...props} theme={theme.dark ? Object.assign({}, darkTheme, props.theme) : {}} />;
-};
-```
-
-> **Sample Wrappers:** PX Blue has sample wrapper code for all of these components that you can copy for use in your application. These can be found in our [Showcase Demo](https://github.com/pxblue/react-native-showcase-demo/tree/master/components/wrappers).
+For best results, instead of using React Native Paper components directly, you should use the [PX Blue wrapper components](https://github.com/pxblue/react-native-component-library/tree/master/components/src/themed/readme.md).
 
 ### TypeScript
 
@@ -172,14 +71,90 @@ Our PX Blue themes extend the themes provided by React Native Paper. If you are 
 declare global {
     namespace ReactNativePaper {
         interface ThemeColors {
-            primaryBase: string;
-            textSecondary: string;
+            primaryPalette: {
+                light: string;
+                main: string;
+                dark: string;
+            };
+            accentPalette: {
+                light: string;
+                main: string;
+                dark: string;
+            };
+            errorPalette: {
+                light: string;
+                main: string;
+                dark: string;
+            };
+            divider: string;
+            textPalette: {
+                primary: string;
+                secondary: string;
+                onPrimary: {
+                    light: string;
+                    main: string;
+                    dark: string;
+                };
+                disabled: string;
+            };
+            actionPalette: {
+                active: string;
+                background: string;
+                disabled: string;
+                disabledBackground: string;
+            };
+            overrides: $DeepPartial<ThemeOverrides>;
+            opacity: Partial<ThemeOpacity>;
         }
         interface ThemeFonts {
             bold: ThemeFont;
         }
     }
 }
+```
+
+You will also need to add the following type definitions that are used within the custom `ThemeColors` interface.
+
+```tsx
+export type ThemeOverrides = {
+    avatar: {
+        background: string;
+    };
+
+    bottomNavigation: {
+        inactive: string;
+    };
+    button: {
+        contained: {
+            text: {
+                disabled: string;
+            };
+        };
+    };
+    chip: {
+        outlined: {
+            background: string;
+        };
+        flat: {
+            background: string;
+        };
+    };
+    snackbar: {
+        accent: string;
+    };
+    toggleButtonGroup: {
+        checked: {
+            background: string;
+        };
+    };
+};
+
+export type ThemeOpacity = {
+    disabled: number;
+    divider: number;
+    disabledBackground: number;
+    actionOpacity: number;
+};
 ```
 
 <!--
