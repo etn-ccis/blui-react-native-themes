@@ -30,9 +30,9 @@ yarn add @pxblue/react-native-themes
 
 > When using Expo, you will need to specify the name for each font weight you load using the format `OpenSans-<Weight>`, e.g., OpenSans-SemiBold. Refer to one of our React Native demos for reference.
 
-### Light Theme
+To use our themes in your application, simply wrap the app in a `Provider` and pass in your desired theme (e.g., `blue`, `blueDark`).
 
-To use the light theme in your application, simply wrap the app in a `Provider` and pass in your desired theme (`blue`).
+### Light Theme
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
@@ -46,8 +46,6 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 
 ### Dark Theme
 
-To use the light theme in your application, simply wrap the app in a `Provider` and pass in your desired theme (`blueDark`).
-
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
 import * as PXBThemes from '@pxblue/react-native-themes';
@@ -57,11 +55,13 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 </ThemeProvider>
 ```
 
+> Users of the Dark Theme should use our React Native Paper wrapper components (see below).
+
 ### React Native Paper Wrapper Components
 
-The theming mechanism for React Native Paper is a bit limited in the amount of customization available for components. Because of this, we updated the `ThemeColors` interface and created wrapper components to use in place of the standard React Native Paper components.
+The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for PX Blue applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of the standard React Native Paper components.
 
-For best results, instead of using React Native Paper components directly, you should use the [PX Blue wrapper components](https://github.com/pxblue/react-native-component-library/tree/master/components/src/themed/readme.md).
+In order for these components to look correct in your application, you should use the [PX Blue wrapper components](https://github.com/pxblue/react-native-component-library/tree/master/components/src/themed/readme.md) in place of the respective components from React Native Paper.
 
 ### TypeScript
 
@@ -111,50 +111,6 @@ declare global {
         }
     }
 }
-```
-
-You will also need to add the following type definitions that are used within the custom `ThemeColors` interface.
-
-```tsx
-export type ThemeOverrides = {
-    avatar: {
-        background: string;
-    };
-
-    bottomNavigation: {
-        inactive: string;
-    };
-    button: {
-        contained: {
-            text: {
-                disabled: string;
-            };
-        };
-    };
-    chip: {
-        outlined: {
-            background: string;
-        };
-        flat: {
-            background: string;
-        };
-    };
-    snackbar: {
-        accent: string;
-    };
-    toggleButtonGroup: {
-        checked: {
-            background: string;
-        };
-    };
-};
-
-export type ThemeOpacity = {
-    disabled: number;
-    divider: number;
-    disabledBackground: number;
-    actionOpacity: number;
-};
 ```
 
 <!--
