@@ -32,7 +32,7 @@ yarn add @pxblue/react-native-themes
 
 To use our themes in your application, simply wrap the app in a `Provider` and pass in your desired theme (e.g., `blue`, `blueDark`).
 
-### Light Theme
+#### Light Theme
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
@@ -44,7 +44,7 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 </ThemeProvider>
 ```
 
-### Dark Theme
+#### Dark Theme
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
