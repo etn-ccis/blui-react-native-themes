@@ -55,11 +55,11 @@ import * as PXBThemes from '@pxblue/react-native-themes';
 </ThemeProvider>
 ```
 
-> Users of the Dark Theme should use our React Native Paper wrapper components (see below).
+> When using either of these themes, you should use our React Native Paper wrapper components (see below).
 
 ### React Native Paper Wrapper Components
 
-The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for PX Blue applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of the standard React Native Paper components.
+The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for PX Blue applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
 
 In order for these components to look correct in your application, you should use the [PX Blue wrapper components](https://github.com/pxblue/react-native-component-library/tree/master/components/src/themed/readme.md) in place of the respective components from React Native Paper.
 
