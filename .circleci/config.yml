@@ -8,6 +8,9 @@ jobs:
         steps:
             - checkout
             - run:
+                  name: Prettier Check
+                  command: yarn prettier:check
+            - run:
                   name: Build
                   command: yarn build
             - run:
