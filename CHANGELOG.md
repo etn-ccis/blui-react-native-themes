@@ -10,7 +10,7 @@
 -   The `blueDarkAlt` theme has been consolidated into the `blueDark` theme and a selection of wrapper components in the `@pxblue/react-native-components` library. This eliminates the need for using two theme providers and writing your own wrappers for these components.
 -   `theme.colors.textSecondary` — use `theme.colors.textPalette.secondary` instead.
 
-## v5.2.0 (September 1, 2021)
+## v5.2.0 (October 1, 2021)
 
 ### Added
 
