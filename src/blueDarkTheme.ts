@@ -6,10 +6,10 @@ All rights reserved.
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
 
-import { configureFonts, DefaultTheme } from "react-native-paper";
-import { blue, red, darkBlack, black, white, lightBlue } from "@pxblue/colors";
-import { fontConfig, ThemeOpacity } from "./shared";
-import Color from "color";
+import { configureFonts, DefaultTheme } from 'react-native-paper';
+import { blue, red, darkBlack, black, white, lightBlue } from '@pxblue/colors';
+import { fontConfig, ThemeOpacity } from './shared';
+import Color from 'color';
 
 const themeOpacity: ThemeOpacity = {
     disabled: 0.36,
@@ -25,8 +25,8 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
     fonts: {
         ...configureFonts(fontConfig),
         bold: {
-            fontFamily: "OpenSans-Bold",
-            fontWeight: "700",
+            fontFamily: 'OpenSans-Bold',
+            fontWeight: '700',
         },
     },
     colors: {
@@ -69,18 +69,14 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
             active: black[500],
             background: black[800],
             disabled: Color(black[300]).alpha(themeOpacity.disabled).string(),
-            disabledBackground: Color(black[200])
-                .alpha(themeOpacity.disabledBackground)
-                .string(),
+            disabledBackground: Color(black[200]).alpha(themeOpacity.disabledBackground).string(),
         },
         disabled: Color(black[300]).alpha(themeOpacity.disabled).string(),
         notification: lightBlue[200],
         opacity: themeOpacity,
         overrides: {
             avatar: {
-                background: Color(black[50])
-                    .alpha(themeOpacity.actionOpacity)
-                    .string(),
+                background: Color(black[50]).alpha(themeOpacity.actionOpacity).string(),
             },
             chip: {
                 flat: {

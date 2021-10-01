@@ -16,6 +16,7 @@
         "build": "yarn && tsc",
         "link:themes": "bash ./scripts/linkThemes.sh",
         "test": "bash ./scripts/buildTest.sh",
+        "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --write",
         "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
         "tag:package": "npx -p @pxblue/tag pxb-tag",
         "update:submodule": "git submodule update --remote"
@@ -44,7 +45,9 @@
         "react-native-paper": "^3.0.0 || ^4.0.0"
     },
     "devDependencies": {
+        "@pxblue/prettier-config": "^1.0.3",
         "@types/color": "^3.0.1",
+        "prettier": "^2.4.1",
         "react-native-paper": "^4.0.0",
         "typescript": "^3.7.2"
     },
@@ -54,5 +57,6 @@
         "LICENSE",
         "CHANGELOG.md",
         "/dist"
-    ]
+    ],
+    "prettier": "@pxblue/prettier-config"
 }
