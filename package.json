@@ -60,6 +60,5 @@
         "LICENSE",
         "CHANGELOG.md",
         "/dist"
-    ],
-    "prettier": "@pxblue/prettier-config"
+    ]
 }
