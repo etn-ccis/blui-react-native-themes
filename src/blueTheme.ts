@@ -7,7 +7,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 import { configureFonts, DefaultTheme } from 'react-native-paper';
-import { blue, red, black, lightBlue, white } from '@pxblue/colors';
+import { blue, red, black, lightBlue, white } from '@brightlayer-ui/colors';
 import { fontConfig } from './shared';
 
 export const blueTheme: ReactNativePaper.Theme = {
