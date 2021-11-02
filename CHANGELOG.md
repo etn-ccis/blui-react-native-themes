@@ -1,6 +1,6 @@
 # Changelog
 
-## v5.2.1-beta.0 (Not yet published)
+## v6.0.0-beta.0 (Not yet published)
 
 ### Changed
 
@@ -12,7 +12,17 @@ Previous versions listed after this indicator refer to our deprecated `@pxblue` 
 
 ---
 
-## v5.2.0 (September 1, 2021)
+## v6.0.0 (October 1, 2021)
+
+### Added
+
+-   Many new theme color properties to give greater control over the styles of various components. Note that the global ReactNativePaper namespace will need to be updated in your application to use these properties.
+
+### Removed
+-   The `blueDarkAlt` theme has been consolidated into the `blueDark` theme and a selection of wrapper components in the `@pxblue/react-native-components` library. This eliminates the need for using two theme providers and writing your own wrappers for these components.
+-   `theme.colors.textSecondary` — use `theme.colors.textPalette.secondary` instead.
+
+## v5.2.0 (October 1, 2021)
 
 ### Added
 
