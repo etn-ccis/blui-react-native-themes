@@ -1,4 +1,4 @@
-# PX Blue themes for React Native applications
+# Brightlayer UI themes for React Native applications
 
 [![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-native-themes/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-native-themes/tree/master)
 [![](https://img.shields.io/npm/v/@brightlayer-ui/react-native-themes.svg?label=@brightlayer-ui/react-native-themes&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/react-native-themes)
@@ -36,10 +36,10 @@ To use our themes in your application, simply wrap the app in a `Provider` and p
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
-import * as BluiThemes from '@brightlayer-ui/react-native-themes';
+import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 ...
 // Default Theme
-<ThemeProvider theme={BluiThemes.blue}>
+<ThemeProvider theme={BLUIThemes.blue}>
     <App />
 </ThemeProvider>
 ```
@@ -48,9 +48,9 @@ import * as BluiThemes from '@brightlayer-ui/react-native-themes';
 
 ```tsx
 import { Provider as ThemeProvider} from 'react-native-paper';
-import * as Themes from '@brightlayer-ui/react-native-themes';
+import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 ...
-<ThemeProvider theme={BluiThemes.blueDark}>
+<ThemeProvider theme={BLUIThemes.blueDark}>
     <App />
 </ThemeProvider>
 ```
@@ -59,9 +59,9 @@ import * as Themes from '@brightlayer-ui/react-native-themes';
 
 ### React Native Paper Wrapper Components
 
-The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for PX Blue applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
+The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for Brightlayer UI applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
 
-In order for these components to look correct in your application, you should use the [PX Blue wrapper components](https://github.com/brightlayer-ui/react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
+In order for these components to look correct in your application, you should use the [Brightlayer UI wrapper components](https://github.com/brightlayer-ui/react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
 
 ### TypeScript
 

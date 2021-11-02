@@ -3,7 +3,7 @@
     "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
     "version": "6.0.0-beta.0 ",
-    "description": "React Native themes for PX Blue applications",
+    "description": "React Native themes for Brightlayer UI applications",
     "main": "./dist/index.js",
     "scripts": {
         "initialize": "bash scripts/initializeSubmodule.sh",
@@ -46,13 +46,13 @@
         "react-native-paper": "^3.0.0 || ^4.0.0"
     },
     "devDependencies": {
-        "@pxblue/prettier-config": "^1.0.3",
+        "@brightlayer-ui/prettier-config": "^1.0.3",
         "@types/color": "^3.0.1",
         "prettier": "^2.4.1",
         "react-native-paper": "^4.0.0",
         "typescript": "^3.7.2"
     },
-    "prettier": "@pxblue/prettier-config",
+    "prettier": "@brightlayer-ui/prettier-config",
     "files": [
         "package.json",
         "README.md",
