@@ -9,6 +9,11 @@
   dependencies:
     "@brightlayer-ui/types" "^2.0.0"
 
+"@brightlayer-ui/prettier-config@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@brightlayer-ui/prettier-config/-/prettier-config-1.0.3.tgz#e40a7ae7435c6fd5118acbf249080e0aa81e93af"
+  integrity sha512-EYm3+V7Qd+oYEF+8FadsXAZqXryEHHbGnrV1BMp9selhABjceqUqXPVE4Sn3SKWQdBNJ3En2A3EzgrzRbvRTaw==
+
 "@brightlayer-ui/types@^2.0.0":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@brightlayer-ui/types/-/types-2.0.0.tgz#d8adc0cdb96c164943adbad6e74043128a8b4112"
@@ -21,11 +26,6 @@
   dependencies:
     deepmerge "^3.2.0"
     hoist-non-react-statics "^3.3.0"
-
-"@pxblue/prettier-config@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@pxblue/prettier-config/-/prettier-config-1.0.3.tgz#285b9ba346f714d397ef4a59579443b95a77e63e"
-  integrity sha512-x9SDup4pf5H54r/stZBXz7/XlMcIqnwHkEJ+9pyXVtGyQljI28lDGQCWQj6heipWAett50yx0RB3P2+MWZDhJA==
 
 "@types/color-convert@*":
   version "2.0.0"
