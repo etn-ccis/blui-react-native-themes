@@ -13,20 +13,20 @@ echo -e "${BLUE}Building themes...${NC}"
 yarn build
 
 echo -en "${BLUE}Creating new folder in node_modules...${NC}"
-rm -rf "./demos/showcase/node_modules/@pxblue/react-native-themes"
-mkdir -p "./demos/showcase/node_modules/@pxblue/react-native-themes"
+rm -rf "./demos/showcase/node_modules/@brightlayer-ui/react-native-themes"
+mkdir -p "./demos/showcase/node_modules/@brightlayer-ui/react-native-themes"
 echo -e "${GREEN}Done${NC}"
 
 echo -en "${BLUE}Copying build output into node_modules...${NC}";
-cp -r ./dist ./demos/showcase/node_modules/@pxblue/react-native-themes
-cp ./package.json ./demos/showcase/node_modules/@pxblue/react-native-themes/package.json
+cp -r ./dist ./demos/showcase/node_modules/@brightlayer-ui/react-native-themes
+cp ./package.json ./demos/showcase/node_modules/@brightlayer-ui/react-native-themes/package.json
 echo -e "${GREEN}Done${NC}"
 
 echo -en "\r\n${BBLUE}Linking Themes: ${NC}"
-if [ ! -f ./demos/showcase/node_modules/@pxblue/react-native-themes/package.json ]; then echo -e "${BRED}Themes Not Linked${NC}" && exit 1; fi
-if [ ! -s ./demos/showcase/node_modules/@pxblue/react-native-themes/dist ];
+if [ ! -f ./demos/showcase/node_modules/@brightlayer-ui/react-native-themes/package.json ]; then echo -e "${BRED}Themes Not Linked${NC}" && exit 1; fi
+if [ ! -s ./demos/showcase/node_modules/@brightlayer-ui/react-native-themes/dist ];
     then
-        if [ ! -f ./demos/showcase/node_modules/@pxblue/react-native-themes/dist/index.js ];
+        if [ ! -f ./demos/showcase/node_modules/@brightlayer-ui/react-native-themes/dist/index.js ];
         then echo -e "${BRED}Themes Not Linked${NC}" && exit 1;
         fi;
 fi

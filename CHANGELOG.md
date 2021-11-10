@@ -1,5 +1,17 @@
 # Changelog
 
+## v6.0.0 (November 9, 2021)
+
+### Changed
+
+-   Changed package namespace from `@pxblue` to `@brightlayer-ui`.
+
+## Package Migration Notice
+
+Previous versions listed after this indicator refer to our deprecated `@pxblue` packages.
+
+---
+
 ## v6.0.0 (October 1, 2021)
 
 ### Added
@@ -38,10 +50,10 @@
 
 -   Font weights available in the theme have changed. We now have `thin`, `light`, `regular`, and `medium` (previously `semiBold`). `Bold` and `ExtraBold` have been removed.
 -   `onPrimary` color is no longer available.
--   `sizes` property of the theme has been removed. If you need these size values, they are now exported from @pxblue/react-native-components.
+-   `sizes` property of the theme has been removed. If you need these size values, they are now exported from @brightlayer-ui/react-native-components.
 
 ## v4.0.0 (February 24, 2020)
 
 ### Changed
 
--   Themes have been broken out into their own packages. This package was originally part of @pxblue/themes. If you are switching to this package, you'll need to update some import statements (refer to the usage instructions in the README).
+-   Themes have been broken out into their own packages. This package was originally part of @brightlayer-ui/themes. If you are switching to this package, you'll need to update some import statements (refer to the usage instructions in the README).
