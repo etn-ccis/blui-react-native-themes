@@ -6,10 +6,10 @@ All rights reserved.
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
 
-import { configureFonts, DefaultTheme } from 'react-native-paper';
-import { blue, red, darkBlack, black, lightBlue } from '@pxblue/colors';
-import { fontConfig } from './shared';
-import Color from 'color';
+import { configureFonts, DefaultTheme } from "react-native-paper";
+import { blue, red, darkBlack, black, lightBlue } from "@brightlayer-ui/colors";
+import { fontConfig } from "./shared";
+import Color from "color";
 
 export const blueDarkTheme: ReactNativePaper.Theme = {
     ...DefaultTheme,
@@ -18,8 +18,8 @@ export const blueDarkTheme: ReactNativePaper.Theme = {
     fonts: {
         ...configureFonts(fontConfig),
         bold: {
-            fontFamily: 'OpenSans-Bold',
-            fontWeight: '700',
+            fontFamily: "OpenSans-Bold",
+            fontWeight: "700",
         },
     },
     colors: {

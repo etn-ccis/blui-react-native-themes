@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.2.0 (December 13, 2021)
+
+### Changed
+
+-   Changed package namespace from `@pxblue` to `@brightlayer-ui`.
+
+## Package Migration Notice
+
+Previous versions listed after this indicator refer to our deprecated `@pxblue` packages.
+
+---
+
 ## v5.2.0 (October 1, 2021)
 
 ### Added

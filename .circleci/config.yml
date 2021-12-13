@@ -4,7 +4,7 @@ orbs:
 jobs:
     build:
         docker:
-            -   image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.9.1-browsers
         steps:
             - checkout
             - run:
@@ -13,40 +13,40 @@ jobs:
             - run:
                   name: Verify Artifacts
                   command: yarn test
-            -   persist_to_workspace:
-                    root: .
-                    paths:
-                        - dist
+            - persist_to_workspace:
+                  root: .
+                  paths:
+                      - dist
 
     publish:
         docker:
-            -   image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.9.1-browsers
         steps:
             - checkout
-            -   attach_workspace:
-                    at: .
-            -   run:
-                    name: Authenticate with registry
-                    command: |
-                        echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-                        echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-            -   run:
-                    name: Publish @pxblue/react-native-themes
-                    command:  |
-                        yarn publish:package -b $CIRCLE_BRANCH
+            - attach_workspace:
+                  at: .
+            - run:
+                  name: Authenticate with registry
+                  command: |
+                      echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+                      echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+            - run:
+                  name: Publish @brightlayer-ui/react-native-themes
+                  command: |
+                      yarn publish:package -b $CIRCLE_BRANCH
 
     tag:
         docker:
-            -   image: circleci/node:12.9.1-browsers
+            - image: circleci/node:12.9.1-browsers
         steps:
             - checkout
             - gh/setup
-            -   attach_workspace:
-                    at: .
-            -   run:
-                    name: Tag @pxblue/react-native-themes
-                    command: |
-                        yarn tag:package -b $CIRCLE_BRANCH
+            - attach_workspace:
+                  at: .
+            - run:
+                  name: Tag @brightlayer-ui/react-native-themes
+                  command: |
+                      yarn tag:package -b $CIRCLE_BRANCH
 
 workflows:
     version: 2
