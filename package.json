@@ -20,7 +20,8 @@
         "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
         "update:submodule": "git submodule update --remote",
         "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --write",
-        "prettier:check": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --check"
+        "prettier:check": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --check",
+        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
     },
     "repository": {
         "type": "git",
@@ -46,6 +47,7 @@
     "devDependencies": {
         "@brightlayer-ui/prettier-config": "^1.0.3",
         "@types/color": "^3.0.1",
+        "npm-license-crawler": "^0.2.1",
         "prettier": "^2.4.1",
         "react-native-paper": "^4.0.0",
         "typescript": "^3.7.2"
