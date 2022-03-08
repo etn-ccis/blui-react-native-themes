@@ -21,7 +21,8 @@
         "update:submodule": "git submodule update --remote",
         "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --write",
         "prettier:check": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --check",
-        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
+        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
+        "precommit": "yarn build && yarn generate:licenses && yarn prettier && yarn test"
     },
     "repository": {
         "type": "git",
@@ -57,6 +58,7 @@
         "package.json",
         "README.md",
         "LICENSE",
+        "LICENSES.json",
         "CHANGELOG.md",
         "/dist"
     ]
