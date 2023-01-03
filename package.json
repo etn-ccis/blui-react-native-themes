@@ -17,7 +17,7 @@
         "link:themes": "bash ./scripts/linkThemes.sh",
         "test": "bash ./scripts/buildTest.sh",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
-        "tag:package": "npx -p @brightlayer-ui/tag blui-tag",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag -s -blui-react-native-themes",
         "update:submodule": "git submodule update --remote",
         "prettier": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --write",
         "prettier:check": "prettier \"src/**/**.{ts,tsx,js,jsx,json,css,scss,html}\" --check",
