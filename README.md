@@ -1,9 +1,9 @@
 # Brightlayer UI themes for React Native applications
 
-[![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-native-themes/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-native-themes/tree/master)
+[![](https://img.shields.io/circleci/project/github/etn-ccis/blui-react-native-themes/master.svg?style=flat)](https://circleci.com/gh/etn-ccis/blui-react-native-themes/tree/master)
 [![](https://img.shields.io/npm/v/@brightlayer-ui/react-native-themes.svg?label=@brightlayer-ui/react-native-themes&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/react-native-themes)
 
-This package provides theming support for Eaton applications using the Brightlayer UI design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
+This package provides [theming](https://brightlayer-ui.github.io/style/themes) support for Eaton applications using the Brightlayer UI design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
 
 For other frameworks, check out our related packages:
 
@@ -61,7 +61,7 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 
 The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for Brightlayer UI applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
 
-In order for these components to look correct in your application, you should use the [Brightlayer UI wrapper components](https://github.com/brightlayer-ui/react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
+In order for these components to look correct in your application, you should use the [Brightlayer UI wrapper components](https://github.com/etn-ccis/blui-react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
 
 ### TypeScript
 
@@ -116,5 +116,5 @@ declare global {
 <!--
 ## Demo
 
-[Check it out](https://github.com/brightlayer-ui/react-native-showcase-demo/tree/master)
+[Check it out](https://github.com/etn-ccis/blui-react-native-showcase-demo/tree/master)
 -->

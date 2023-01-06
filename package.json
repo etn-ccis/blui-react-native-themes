@@ -26,12 +26,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/brightlayer-ui/react-native-themes.git"
+        "url": "git+https://github.com/etn-ccis/blui-react-native-themes.git"
     },
     "bugs": {
-        "url": "https://github.com/brightlayer-ui/react-native-themes/issues"
+        "url": "https://github.com/etn-ccis/blui-react-native-themes/issues"
     },
-    "homepage": "https://github.com/brightlayer-ui/react-native-themes/tree/master",
+    "homepage": "https://github.com/etn-ccis/blui-react-native-themes/tree/master",
     "keywords": [
         "Brightlayer UI",
         "themes",
