@@ -49,7 +49,7 @@
         "@brightlayer-ui/prettier-config": "^1.0.3",
         "@types/color": "^3.0.1",
         "npm-license-crawler": "^0.2.1",
-        "prettier": "^2.4.1",
+        "prettier": "^3.0.0",
         "react-native-paper": "^4.0.0",
         "typescript": "^5.0.4"
     },
