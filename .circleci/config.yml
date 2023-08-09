@@ -4,7 +4,7 @@ orbs:
 jobs:
     build:
         docker:
-            -   image: cimg/node:14.19.0-browsers
+            -   image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             - restore_cache:
@@ -35,7 +35,7 @@ jobs:
 
     publish:
         docker:
-            -   image: cimg/node:14.19.0-browsers
+            -   image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             -   attach_workspace:
