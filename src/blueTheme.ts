@@ -1,7 +1,15 @@
+/**
+Copyright (c) 2020-present, Eaton
+
+All rights reserved.
+
+This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
+**/
+
 import { MD3LightTheme, configureFonts } from 'react-native-paper';
 import { BLUIColors } from '@brightlayer-ui/colors';
-import Color from 'color';
 import { fontConfig } from './shared';
+import Color from 'color';
 
 export const MD3BluiLightTheme = {
     ...MD3LightTheme,
