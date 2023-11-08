@@ -1,66 +1,77 @@
-type FontWeight = 'normal' | 'bold' | '100' | '200' | '300' | '400' | '500' | '600' | '700' | '800' | '900';
+import { Platform } from 'react-native';
 
-const defaultFontConfig = {
-    regular: {
-        fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as FontWeight,
-    },
-    medium: {
-        fontFamily: 'OpenSans-SemiBold',
-        fontWeight: '600' as FontWeight,
-    },
-    light: {
-        fontFamily: 'OpenSans-Light',
-        fontWeight: '300' as FontWeight,
-    },
-    thin: {
-        fontFamily: 'OpenSans-Light',
-        fontWeight: '100' as FontWeight,
-    },
-};
+const fweight: '400' = '400';
 
 export const fontConfig = {
-    default: defaultFontConfig,
-    ios: defaultFontConfig,
-    android: defaultFontConfig,
-};
-
-export type ThemeOverrides = {
-    avatar: {
-        background: string;
-    };
-
-    bottomNavigation: {
-        inactive: string;
-    };
-    button: {
-        contained: {
-            text: {
-                disabled: string;
-            };
-        };
-    };
-    chip: {
-        outlined: {
-            background: string;
-        };
-        flat: {
-            background: string;
-        };
-    };
-    snackbar: {
-        accent: string;
-    };
-    toggleButtonGroup: {
-        checked: {
-            background: string;
-        };
-    };
-};
-
-export type ThemeOpacity = {
-    disabled: number;
-    divider: number;
-    disabledBackground: number;
-    actionOpacity: number;
+    customVariant: {
+        fontFamily: Platform.select({
+            web: 'Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif',
+            ios: 'System',
+            default: 'OpenSans-Regular',
+        }),
+        fontWeight: '400' as const,
+        letterSpacing: 0.5,
+        lineHeight: 22,
+        fontSize: 20,
+    },
+    displaySmall: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    displayMedium: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    displayLarge: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    headlineSmall: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 500,
+    },
+    headlineMedium: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 500,
+    },
+    headlineLarge: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 500,
+    },
+    titleSmall: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    titleMedium: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    titleLarge: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    labelSmall: {
+        fontFamily: 'OpenSans-SemiBold',
+        fontWeight: 500,
+    },
+    labelMedium: {
+        fontFamily: 'OpenSans-SemiBold',
+        fontWeight: 500,
+    },
+    labelLarge: {
+        fontFamily: 'OpenSans-SemiBold',
+        fontWeight: 500,
+    },
+    bodySmall: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    bodyMedium: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
+    bodyLarge: {
+        fontFamily: 'OpenSans-Regular',
+        fontWeight: 400,
+    },
 };

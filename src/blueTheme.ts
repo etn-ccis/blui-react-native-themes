@@ -1,93 +1,85 @@
-/**
-Copyright (c) 2020-present, Eaton
-
-All rights reserved.
-
-This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
-**/
-
-import { configureFonts, DefaultTheme } from 'react-native-paper';
-import { blue, red, black, gray, lightBlue, white } from '@brightlayer-ui/colors';
-import { fontConfig, ThemeOpacity } from './shared';
+import { MD3LightTheme, configureFonts } from 'react-native-paper';
+import { BLUIColors } from '@brightlayer-ui/colors';
 import Color from 'color';
+import { fontConfig } from './shared';
 
-const themeOpacity: ThemeOpacity = {
-    disabled: 0.3,
-    divider: 0.36,
-    disabledBackground: 0.24,
-    actionOpacity: 1,
-};
-
-export const blueTheme: ReactNativePaper.Theme = {
-    ...DefaultTheme,
-    dark: false,
-    roundness: 4,
-    fonts: {
-        ...configureFonts(fontConfig),
-        bold: {
-            fontFamily: 'OpenSans-Bold',
-            fontWeight: '700',
-        },
-    },
+export const MD3BluiLightTheme = {
+    ...MD3LightTheme,
+    fonts: configureFonts({ config: fontConfig }),
     colors: {
-        ...DefaultTheme.colors,
-        primary: blue[500],
-        primaryPalette: {
-            light: blue[50],
-            main: blue[500],
-            dark: blue[700],
+        ...MD3LightTheme.colors,
+        primary: BLUIColors.primary[40],
+        onPrimary: BLUIColors.primary[100],
+        primaryContainer: BLUIColors.primary[80],
+        onPrimaryContainer: BLUIColors.primary[30],
+        secondary: BLUIColors.primary[40],
+        onSecondary: BLUIColors.primary[100],
+        secondaryContainer: BLUIColors.primary[80],
+        onSecondaryContainer: BLUIColors.primary[30],
+        tertiary: BLUIColors.primary[40],
+        onTertiary: BLUIColors.primary[100],
+        tertiaryContainer: BLUIColors.primary[80],
+        onTertiaryContainer: BLUIColors.primary[30],
+        error: BLUIColors.error[40],
+        errorNonText: BLUIColors.error[50],
+        onError: BLUIColors.primary[100],
+        errorContainer: BLUIColors.error[90],
+        onErrorContainer: BLUIColors.error[30],
+        background: BLUIColors.neutral[98],
+        onBackground: BLUIColors.neutral[10],
+        surface: BLUIColors.neutral[98],
+        onSurface: BLUIColors.neutral[10],
+        surfaceVariant: BLUIColors.neutralVariant[90],
+        onSurfaceVariant: BLUIColors.neutralVariant[30],
+        outline: BLUIColors.neutralVariant[50],
+        outlineVariant: Color(BLUIColors.neutralVariant[50]).alpha(0.25),
+        shadow: BLUIColors.primary[0],
+        scrim: BLUIColors.primary[0],
+        inverseSurface: 'rgb(47, 48, 51)',
+        inverseOnSurface: 'rgb(241, 240, 244)',
+        inversePrimary: 'rgb(169, 199, 255)',
+        elevation: {
+            level0: 'transparent',
+            level1: BLUIColors.primary[100],
+            level2: BLUIColors.neutral[97],
+            level3: BLUIColors.neutral[94],
+            level4: BLUIColors.neutral[92],
+            level5: BLUIColors.neutral[90],
         },
-        accent: lightBlue[500],
-        accentPalette: {
-            light: lightBlue[50],
-            main: lightBlue[500],
-            dark: lightBlue[700],
-        },
-        error: red[500],
-        errorPalette: {
-            light: red[50],
-            main: red[500],
-            dark: red[700],
-        },
-        divider: Color(black[200]).alpha(themeOpacity.divider).string(),
-        background: white[200],
-        surface: white[50],
-        text: black[500],
-        placeholder: gray[500],
-        onSurface: black[500],
-        textPalette: {
-            primary: black[500],
-            secondary: gray[500],
-            onPrimary: {
-                light: black[500],
-                main: white[50],
-                dark: white[50],
-            },
-            disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
-        },
-        actionPalette: {
-            active: gray[500],
-            background: white[500],
-            disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
-            disabledBackground: Color(black[200]).alpha(themeOpacity.disabledBackground).string(),
-        },
-        disabled: Color(black[500]).alpha(themeOpacity.disabled).string(),
-        notification: lightBlue[500],
-        opacity: themeOpacity,
-        overrides: {
-            snackbar: {
-                accent: blue[200],
-            },
-            bottomNavigation: {
-                inactive: blue[200],
-            },
-            button: {
-                contained: {
-                    text: {
-                        disabled: blue[200],
-                    },
-                },
-            },
-        },
+        surfaceDisabled: 'rgba(26, 27, 30, 0.12)',
+        onSurfaceDisabled: 'rgba(26, 27, 30, 0.38)',
+        backdrop: 'rgba(45, 48, 56, 0.4)',
+        disabled: BLUIColors.neutral[10],
+        surfaceContainerLow: BLUIColors.neutral[97],
+        neutral10: BLUIColors.neutralVariant[10],
+        neutral30: BLUIColors.neutral[30],
+        neutral80: BLUIColors.neutral[80],
+        neutral100: BLUIColors.primary[100],
+        warning: BLUIColors.warning[40],
+        warningNonText: BLUIColors.warning[60],
+        onWarning: BLUIColors.primary[100],
+        warningContainer: BLUIColors.warning[90],
+        onWarningContainer: BLUIColors.warning[30],
+        success: BLUIColors.success[40],
+        successNonText: BLUIColors.success[50],
+        onSuccess: BLUIColors.primary[100],
+        successContainer: BLUIColors.success[90],
+        onSuccessContainer: BLUIColors.success[30],
+        orange: BLUIColors.orange[40],
+        orangeNonText: BLUIColors.orange[50],
+        onOrange: BLUIColors.primary[100],
+        orangeContainer: BLUIColors.orange[90],
+        onOrangeContainer: BLUIColors.orange[30],
+        purple: BLUIColors.purple[40],
+        purpleNonText: BLUIColors.purple[50],
+        onPurple: BLUIColors.primary[100],
+        purpleContainer: BLUIColors.purple[90],
+        onPurpleContainer: BLUIColors.purple[30],
+        primaryNonText: BLUIColors.primary[50],
+        surfaceContainerLowest: BLUIColors.primary[100],
+        surfaceContainerLower: BLUIColors.neutral[97],
+        surfaceContainer: BLUIColors.neutral[94],
+        surfaceContainerHigh: BLUIColors.neutral[92],
+        surfaceContainerHighest: BLUIColors.neutral[90],
     },
 };
