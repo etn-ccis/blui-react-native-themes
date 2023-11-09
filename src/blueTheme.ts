@@ -16,11 +16,11 @@ export const MD3BluiLightTheme = {
     fonts: configureFonts({ config: fontConfig }),
     colors: {
         ...MD3LightTheme.colors,
+        // React Native Paper default theme color variants
         primary: BLUIColors.primary[40],
         onPrimary: BLUIColors.primary[100],
         primaryContainer: BLUIColors.primary[80],
         onPrimaryContainer: BLUIColors.primary[30],
-        primaryNonText: BLUIColors.primary[50],
         secondary: BLUIColors.primary[40],
         onSecondary: BLUIColors.primary[100],
         secondaryContainer: BLUIColors.primary[80],
@@ -33,7 +33,6 @@ export const MD3BluiLightTheme = {
         onError: BLUIColors.primary[100],
         errorContainer: BLUIColors.error[90],
         onErrorContainer: BLUIColors.error[30],
-        errorNonText: BLUIColors.error[50],
         background: BLUIColors.neutral[98],
         onBackground: BLUIColors.neutral[10],
         surface: BLUIColors.neutral[98],
@@ -55,6 +54,10 @@ export const MD3BluiLightTheme = {
             level4: BLUIColors.neutral[92],
             level5: BLUIColors.neutral[90],
         },
+
+        // Custom color variants
+        primaryNonText: BLUIColors.primary[50],
+        errorNonText: BLUIColors.error[50],
         disabled: Color(BLUIColors.neutral[10]).alpha(0.2),
         warning: BLUIColors.warning[40],
         warningNonText: BLUIColors.warning[60],
