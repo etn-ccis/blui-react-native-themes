@@ -1,5 +1,7 @@
 # Changelog
 
+## v7.0.0 (Unreleased)
+
 ### Changed
 
 -   Updated themes to use Material Design 3 styled palettes and React Native Paper v5 theme structure.
