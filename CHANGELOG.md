@@ -1,5 +1,9 @@
 # Changelog
 
+### Changed
+
+-   Updated themes to use Material Design 3 styled palettes and React Native Paper v5 theme structure.
+
 ## v6.0.0 (November 9, 2021)
 
 ### Changed
@@ -19,6 +23,7 @@ Previous versions listed after this indicator refer to our deprecated `@pxblue` 
 -   Many new theme color properties to give greater control over the styles of various components. Note that the global ReactNativePaper namespace will need to be updated in your application to use these properties.
 
 ### Removed
+
 -   The `blueDarkAlt` theme has been consolidated into the `blueDark` theme and a selection of wrapper components in the `@pxblue/react-native-components` library. This eliminates the need for using two theme providers and writing your own wrappers for these components.
 -   `theme.colors.textSecondary` — use `theme.colors.textPalette.secondary` instead.
 
