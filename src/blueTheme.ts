@@ -56,33 +56,62 @@ export const MD3BluiLightTheme = {
         },
 
         // Custom color variants
+        // High-emphasis primary non-text variant, can be used on non-text elements like icons
         primaryNonText: BLUIColors.primary[50],
+        // Attention-grabbing error color can be used on non-text elements like icons, which communicate error states
         errorNonText: BLUIColors.error[50],
+        // variant used to render disabled elements
         disabled: Color(BLUIColors.neutral[10]).alpha(0.2),
+        // warning variant fills, texts, and icons which communicate warning states
         warning: BLUIColors.warning[40],
+        // can be used on non-text warning elements like icons
         warningNonText: BLUIColors.warning[60],
+        // can be used on warning text and icons against warning
         onWarning: BLUIColors.primary[100],
+        // Standout fill warning color against surface
         warningContainer: BLUIColors.warning[90],
+        // Text and icons against warning container
         onWarningContainer: BLUIColors.warning[30],
+        // success color variant fills, texts, and icons which communicate success states
         success: BLUIColors.success[40],
+        // can be used on non-text success elements like icons
         successNonText: BLUIColors.success[50],
+        // can be used on success text and icons against warning
         onSuccess: BLUIColors.primary[100],
+        // Standout fill success color against surface
         successContainer: BLUIColors.success[90],
+        // Text and icons against success container
         onSuccessContainer: BLUIColors.success[30],
+        // orange color variant fills, texts, and icons
         orange: BLUIColors.orange[40],
+        // non-text orange variant can be used on non-text elements like icons
         orangeNonText: BLUIColors.orange[50],
+        // can be used on text and icons against orange
         onOrange: BLUIColors.primary[100],
+        // Standout fill orange color against surface
         orangeContainer: BLUIColors.orange[90],
+        // Text and icons against orange container
         onOrangeContainer: BLUIColors.orange[30],
+        // purple color variant fills, texts, and icons
         purple: BLUIColors.purple[40],
+        // non-text purple variant can be used on non-text elements like icons
         purpleNonText: BLUIColors.purple[50],
+        // can be used on text and icons against purple
         onPurple: BLUIColors.primary[100],
+        // Standout fill purple color against surface
         purpleContainer: BLUIColors.purple[90],
+        // Text and icons against purple container
         onPurpleContainer: BLUIColors.purple[30],
+        // Surface container is the default role, but the others are especially helpful for creating hierarchy and nested containers
+        // Lowest-emphasis container color
         surfaceContainerLowest: BLUIColors.primary[100],
+        // Low-emphasis container color
         surfaceContainerLow: BLUIColors.neutral[97],
+        // Default container color
         surfaceContainer: BLUIColors.neutral[94],
+        // High-emphasis container color
         surfaceContainerHigh: BLUIColors.neutral[92],
+        // Highest-emphasis container color
         surfaceContainerHighest: BLUIColors.neutral[90],
     },
 };
