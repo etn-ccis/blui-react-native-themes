@@ -76,7 +76,7 @@ export const MD3BluiLightTheme = {
         success: BLUIColors.success[40],
         // can be used on non-text success elements like icons
         successNonText: BLUIColors.success[50],
-        // can be used on success text and icons against warning
+        // can be used on success text and icons against success
         onSuccess: BLUIColors.primary[100],
         // Standout fill success color against surface
         successContainer: BLUIColors.success[90],
