@@ -40,7 +40,7 @@ export const MD3BluiDarkTheme = {
         surfaceVariant: BLUIColors.neutralVariant[30],
         onSurfaceVariant: BLUIColors.neutralVariant[70],
         outline: BLUIColors.neutralVariant[60],
-        outlineVariant: Color(BLUIColors.neutralVariant[60]).alpha(0.25),
+        outlineVariant: Color(BLUIColors.neutralVariant[60]).alpha(0.25).rgb().string(),
         shadow: BLUIColors.primary[0],
         scrim: BLUIColors.primary[0],
         inverseSurface: BLUIColors.neutral[90],
@@ -61,7 +61,7 @@ export const MD3BluiDarkTheme = {
         // Attention-grabbing error color can be used on non-text elements like icons, which communicate error states
         errorNonText: BLUIColors.error[60],
         // variant used to render disabled elements
-        disabled: Color(BLUIColors.neutral[90]).alpha(0.2),
+        disabled: Color(BLUIColors.neutral[90]).alpha(0.2).rgb().string(),
         // warning variant fills, texts, and icons which communicate warning states
         warning: BLUIColors.warning[90],
         // can be used on non-text warning elements like icons
@@ -113,5 +113,8 @@ export const MD3BluiDarkTheme = {
         surfaceContainerHigh: BLUIColors.neutral[17],
         // Highest-emphasis container color
         surfaceContainerHighest: BLUIColors.neutral[20],
+
+        onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
+        disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
     },
 };
