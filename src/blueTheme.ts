@@ -7,7 +7,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 import { MD3LightTheme, configureFonts } from 'react-native-paper';
-import { BLUIColors } from '@brightlayer-ui/colors';
+import BLUIColors from '@brightlayer-ui/colors';
 import { fontConfig } from './shared';
 import Color from 'color';
 
@@ -37,6 +37,8 @@ export const MD3BluiLightTheme = {
         onBackground: BLUIColors.neutral[10],
         surface: BLUIColors.neutral[98],
         onSurface: BLUIColors.neutral[10],
+        surfaceDisabled: Color(BLUIColors.neutral[10]).alpha(0.2).rgb().string(),
+        // TODO : onSurfaceDisabled: 'Value to be updated',
         surfaceVariant: BLUIColors.neutralVariant[90],
         onSurfaceVariant: BLUIColors.neutralVariant[30],
         outline: BLUIColors.neutralVariant[50],
