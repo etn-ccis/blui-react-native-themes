@@ -39,6 +39,10 @@ export const MD3BluiDarkTheme = {
         onSurface: BLUIColors.neutral[95],
         surfaceVariant: BLUIColors.neutralVariant[30],
         onSurfaceVariant: BLUIColors.neutralVariant[70],
+        // surfaceDisabled is the same as disabledContainer in design files
+        surfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.10).rgb().string(),
+        // onSurfaceDisabled is the same as onDisabledContainer in design files
+        onSurfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
         outline: BLUIColors.neutralVariant[60],
         outlineVariant: Color(BLUIColors.neutralVariant[60]).alpha(0.25).rgb().string(),
         shadow: BLUIColors.primary[0],
@@ -61,7 +65,7 @@ export const MD3BluiDarkTheme = {
         // Attention-grabbing error color can be used on non-text elements like icons, which communicate error states
         errorNonText: BLUIColors.error[60],
         // variant used to render disabled elements
-        disabled: Color(BLUIColors.neutral[90]).alpha(0.2).rgb().string(),
+        disabled: Color(BLUIColors.neutral[95]).alpha(0.25).rgb().string(),
         // warning variant fills, texts, and icons which communicate warning states
         warning: BLUIColors.warning[90],
         // can be used on non-text warning elements like icons
@@ -113,8 +117,8 @@ export const MD3BluiDarkTheme = {
         surfaceContainerHigh: BLUIColors.neutral[17],
         // Highest-emphasis container color
         surfaceContainerHighest: BLUIColors.neutral[20],
-
-        onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
-        disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
+        // This is alias for surface disabled, used as disabled container background
+        disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.10).rgb().string(),
+        onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
     },
 };
