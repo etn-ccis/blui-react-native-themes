@@ -40,7 +40,7 @@ export const MD3BluiDarkTheme = {
         surfaceVariant: BLUIColors.neutralVariant[30],
         onSurfaceVariant: BLUIColors.neutralVariant[70],
         // surfaceDisabled is the same as disabledContainer in design files
-        surfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.10).rgb().string(),
+        surfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
         // onSurfaceDisabled is the same as onDisabledContainer in design files
         onSurfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
         outline: BLUIColors.neutralVariant[60],
@@ -118,7 +118,7 @@ export const MD3BluiDarkTheme = {
         // Highest-emphasis container color
         surfaceContainerHighest: BLUIColors.neutral[20],
         // This is alias for surface disabled, used as disabled container background
-        disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.10).rgb().string(),
+        disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
         onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
     },
 };
