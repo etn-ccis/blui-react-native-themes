@@ -119,6 +119,22 @@ export const MD3BluiDarkTheme = {
         surfaceContainerHighest: BLUIColors.neutral[20],
         // This is alias for surface disabled, used as disabled container background
         disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
+        // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
+        errorFilledContainer: BLUIColors.error[40],
+        onErrorFilledContainer: BLUIColors.error[100],
+        errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.3).rgb().string(),
+        onErrorShadedContainer: BLUIColors.error[80],
+        errorOutlinedContainer: BLUIColors.error[60],
+        onErrorOutlinedContainer: BLUIColors.error[80],
+        orangeFilledContainer: BLUIColors.orange[70],
+        onOrangeFilledContainer: BLUIColors.orange[20],
+        orangeShadedContainer: Color(BLUIColors.orange[70]).alpha(0.15).rgb().string(),
+        onOrangeShadedContainer: BLUIColors.orange[80],
+        orangeOutlinedContainer: BLUIColors.orange[70],
+        onOrangeOutlinedContainer: BLUIColors.orange[80],
+        warningFilledContainer: BLUIColors.warning[80],
+        onWarningFilledContainer: BLUIColors.warning[30],
+        warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.1).rgb().string(),
     },
 };

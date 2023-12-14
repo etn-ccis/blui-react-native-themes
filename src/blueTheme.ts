@@ -7,7 +7,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 import { MD3LightTheme, configureFonts } from 'react-native-paper';
-import { BLUIColors } from '@brightlayer-ui/colors';
+import BLUIColors from '@brightlayer-ui/colors';
 import { fontConfig } from './shared';
 import Color from 'color';
 
@@ -119,6 +119,22 @@ export const MD3BluiLightTheme = {
         surfaceContainerHighest: BLUIColors.neutral[90],
         // This is alias for surface disabled, used as disabled container background
         disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
+        // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
+        errorFilledContainer: BLUIColors.error[40],
+        onErrorFilledContainer: BLUIColors.error[100],
+        errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.15).rgb().string(),
+        onErrorShadedContainer: BLUIColors.error[30],
+        errorOutlinedContainer: BLUIColors.error[40],
+        onErrorOutlinedContainer: BLUIColors.error[40],
+        orangeFilledContainer: BLUIColors.orange[70],
+        onOrangeFilledContainer: BLUIColors.orange[20],
+        orangeShadedContainer: Color(BLUIColors.orange[70]).alpha(0.2).rgb().string(),
+        onOrangeShadedContainer: BLUIColors.orange[30],
+        orangeOutlinedContainer: BLUIColors.orange[70],
+        onOrangeOutlinedContainer: BLUIColors.orange[40],
+        warningFilledContainer: BLUIColors.warning[90],
+        onWarningFilledContainer: BLUIColors.warning[30],
+        warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.5).rgb().string(),
     },
 };
