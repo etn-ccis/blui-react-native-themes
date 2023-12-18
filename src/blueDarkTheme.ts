@@ -121,20 +121,35 @@ export const MD3BluiDarkTheme = {
         disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
         // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
+        // Attention-grabbing fill color against error filled surface
         errorFilledContainer: BLUIColors.error[40],
+        // Text and icons against error filled container
         onErrorFilledContainer: BLUIColors.error[100],
+        // Attention-grabbing fill color against error shaded surface
         errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.3).rgb().string(),
+        // Text and icons against error shaded container
         onErrorShadedContainer: BLUIColors.error[80],
+        // Attention-grabbing fill color against error outlined surface
         errorOutlinedContainer: BLUIColors.error[60],
+        // Text and icons against error outlined container
         onErrorOutlinedContainer: BLUIColors.error[80],
+        // Orange color against orange filled surface
         orangeFilledContainer: BLUIColors.orange[70],
+        // Text and icons against orange filled container
         onOrangeFilledContainer: BLUIColors.orange[20],
+        // Orange color against orange shaded surface
         orangeShadedContainer: Color(BLUIColors.orange[70]).alpha(0.15).rgb().string(),
+        // Text and icons against orange shaded container
         onOrangeShadedContainer: BLUIColors.orange[80],
+        // Orange color against orange outlined surface
         orangeOutlinedContainer: BLUIColors.orange[70],
+        // Text and icons against orange outlined container
         onOrangeOutlinedContainer: BLUIColors.orange[80],
+        // Warning color against warning filled surface
         warningFilledContainer: BLUIColors.warning[80],
+        // Text and icons against warning filled container
         onWarningFilledContainer: BLUIColors.warning[30],
+        // Warning color against warning shaded surface
         warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.1).rgb().string(),
     },
 };
