@@ -1,5 +1,9 @@
 import { Platform } from 'react-native';
 
+import { MD3Theme, useTheme } from 'react-native-paper';
+import { MD3Type, MD3Typescale } from 'react-native-paper/lib/typescript/types';
+import { $DeepPartial } from '@callstack/react-theme-provider';
+
 export const fontConfig = {
     displaySmall: {
         fontFamily: 'OpenSans-Regular',
@@ -99,3 +103,126 @@ export const fontConfig = {
         letterSpacing: 0.15,
     },
 };
+
+export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
+    colors: {
+        primary: string;
+        primaryContainer: string;
+        secondary: string;
+        secondaryContainer: string;
+        tertiary: string;
+        tertiaryContainer: string;
+        surface: string;
+        surfaceVariant: string;
+        surfaceDisabled: string;
+        background: string;
+        error: string;
+        errorContainer: string;
+        onPrimary: string;
+        onPrimaryContainer: string;
+        onSecondary: string;
+        onSecondaryContainer: string;
+        onTertiary: string;
+        onTertiaryContainer: string;
+        onSurface: string;
+        onSurfaceVariant: string;
+        onSurfaceDisabled: string;
+        onError: string;
+        onErrorContainer: string;
+        onBackground: string;
+        outline: string;
+        outlineVariant: string;
+        inverseSurface: string;
+        inverseOnSurface: string;
+        inversePrimary: string;
+        shadow: string;
+        scrim: string;
+        backdrop: string;
+        elevation: {
+            level0: string;
+            level1: string;
+            level2: string;
+            level3: string;
+            level4: string;
+            level5: string;
+        };
+        // Custom color variants
+        primaryNonText: string;
+        errorNonText: string;
+        disabled: string;
+        warning: string;
+        warningNonText: string;
+        onWarning: string;
+        warningContainer: string;
+        onWarningContainer: string;
+        success: string;
+        successNonText: string;
+        onSuccess: string;
+        successContainer: string;
+        onSuccessContainer: string;
+        orange: string;
+        orangeNonText: string;
+        onOrange: string;
+        orangeContainer: string;
+        onOrangeContainer: string;
+        purple: string;
+        purpleNonText: string;
+        onPurple: string;
+        purpleContainer: string;
+        onPurpleContainer: string;
+        surfaceContainerLowest: string;
+        surfaceContainerLow: string;
+        surfaceContainer: string;
+        surfaceContainerHigh: string;
+        surfaceContainerHighest: string;
+        disabledContainer: string;
+        onDisabledContainer: string;
+        errorFilledContainer: string;
+        onErrorFilledContainer: string;
+        errorShadedContainer: string;
+        onErrorShadedContainer: string;
+        errorOutlinedContainerOutline: string;
+        onErrorOutlinedContainerOutline: string;
+        orangeFilledContainer: string;
+        onOrangeFilledContainer: string;
+        orangeShadedContainer: string;
+        onOrangeShadedContainer: string;
+        orangeOutlinedContainer: string;
+        onOrangeOutlinedContainer: string;
+        warningFilledContainer: string;
+        onWarningFilledContainer: string;
+        warningShadedContainer: string;
+        onWarningShadedContainer: string;
+        warningOutlinedContainerOutline: string;
+        onWarningOutlinedContainer: string;
+        successFilledContainer: string;
+        onSuccessFilledContainer: string;
+        successShadedContainer: string;
+        successShadedLabel: string;
+        successOutlinedContainerOutline: string;
+        onSuccessOutlinedContainer: string;
+        primaryFilledContainer: string;
+        onPrimaryFilledContainer: string;
+        primaryShadedContainer: string;
+        onPrimaryShadedContainer: string;
+        primaryOutlinedContainerOutline: string;
+        onPrimaryOutlinedContainer: string;
+        purpleFilledContainer: string;
+        onPurpleFilledContainer: string;
+        purpleShadedContainer: string;
+        onPurpleShadedContainer: string;
+        purpleOutlinedContainerOutline: string;
+        onPurpleOutlinedContainer: string;
+        neutralFilledContainer: string;
+        onNeutralFilledContainer: string;
+        neutralShadedContainer: string;
+        onNeutralShadedContainer: string;
+        neutralOutlinedContainerOutline: string;
+        onNeutralOutlinedContainer: string;
+    };
+    fonts: MD3Typescale & {
+        customVariant: MD3Type;
+    };
+};
+
+export const useExtendedTheme = (overrides?: $DeepPartial<ExtendedTheme>): ExtendedTheme => useTheme<ExtendedTheme>(overrides);
