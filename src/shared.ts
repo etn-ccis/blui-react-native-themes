@@ -225,4 +225,5 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
     };
 };
 
-export const useExtendedTheme = (overrides?: $DeepPartial<ExtendedTheme>): ExtendedTheme => useTheme<ExtendedTheme>(overrides);
+export const useExtendedTheme = (overrides?: $DeepPartial<ExtendedTheme>): ExtendedTheme =>
+    useTheme<ExtendedTheme>(overrides);
