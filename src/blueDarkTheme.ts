@@ -119,6 +119,11 @@ export const MD3BluiDarkTheme = {
         surfaceContainerHighest: BLUIColors.neutral[20],
         // This is alias for surface disabled, used as disabled container background
         disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
+        // Text and icons against disabled container
         onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
+        // Can be used on slider and range selector track
+        sliderTrack: BLUIColors.neutral[30],
+        // Disabled version of slider track color variant
+        sliderTrackDisabled: Color(BLUIColors.neutral[30]).alpha(0.5).rgb().string(),
     },
 };

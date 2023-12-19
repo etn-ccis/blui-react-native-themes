@@ -219,6 +219,8 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
         onNeutralShadedContainer: string;
         neutralOutlinedContainerOutline: string;
         onNeutralOutlinedContainer: string;
+        sliderTrack: string;
+        sliderTrackDisabled: string;
     };
     fonts: MD3Typescale & {
         customVariant: MD3Type;
