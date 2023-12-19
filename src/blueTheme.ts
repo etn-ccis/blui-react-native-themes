@@ -7,7 +7,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 import { MD3LightTheme, configureFonts } from 'react-native-paper';
-import { BLUIColors } from '@brightlayer-ui/colors';
+import BLUIColors from '@brightlayer-ui/colors';
 import { fontConfig } from './shared';
 import Color from 'color';
 
