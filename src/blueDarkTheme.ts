@@ -129,10 +129,10 @@ export const MD3BluiDarkTheme = {
         errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.3).rgb().string(),
         // Text and icons against error shaded container
         onErrorShadedContainer: BLUIColors.error[80],
-        // Attention-grabbing fill color against error outlined surface
-        errorOutlinedContainer: BLUIColors.error[60],
+        // Attention-grabbing fill color against error outlined container
+        errorOutlinedContainerOutline: BLUIColors.error[60],
         // Text and icons against error outlined container
-        onErrorOutlinedContainer: BLUIColors.error[80],
+        onErrorOutlinedContainerOutline: BLUIColors.error[80],
         // Orange color against orange filled surface
         orangeFilledContainer: BLUIColors.orange[70],
         // Text and icons against orange filled container
@@ -151,5 +151,59 @@ export const MD3BluiDarkTheme = {
         onWarningFilledContainer: BLUIColors.warning[30],
         // Warning color against warning shaded surface
         warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.1).rgb().string(),
+        // Text and icons against warning shaded container
+        onWarningShadedContainer: BLUIColors.warning[90],
+        // Warning color against warning outlined container's outline surface
+        warningOutlinedContainerOutline: BLUIColors.warning[90],
+        // Text and icons against warning outlined container's outline surface
+        onWarningOutlinedContainer: BLUIColors.warning[90],
+        // Attention-grabbing fill color against success filled container
+        successFilledContainer: BLUIColors.success[50],
+        // Text and icons against success filled container
+        onSuccessFilledContainer: BLUIColors.success[100],
+        // Attention-grabbing fill color against success shaded surface
+        successShadedContainer: Color(BLUIColors.success[40]).alpha(0.3).rgb().string(),
+        // Attention-grabbing label color against success shaded surface
+        successShadedLabel: BLUIColors.success[90],
+        // Attention-grabbing fill color against success container's outline
+        successOutlinedContainerOutline: BLUIColors.success[70],
+        // Text and icons against success outlined container
+        onSuccessOutlinedContainer: BLUIColors.success[80],
+        // Primary color against primary filled surface
+        primaryFilledContainer: BLUIColors.primary[50],
+        // Text and icons against primary filled container
+        onPrimaryFilledContainer: BLUIColors.primary[100],
+        // Primary color against primary shaded surface
+        primaryShadedContainer: Color(BLUIColors.primary[40]).alpha(0.4).rgb().string(),
+        // Text and icons against primary shaded container
+        onPrimaryShadedContainer: BLUIColors.primary[80],
+        // Primary color against primary outlined container's outline
+        primaryOutlinedContainerOutline: BLUIColors.primary[60],
+        // Text and icons against primary outlined container's outline
+        onPrimaryOutlinedContainer: BLUIColors.primary[70],
+        // Purple color against purple filled surface
+        purpleFilledContainer: BLUIColors.purple[50],
+        // Text and icons against purple filled container
+        onPurpleFilledContainer: BLUIColors.purple[100],
+        // Purple color against purple shaded surface
+        purpleShadedContainer: Color(BLUIColors.purple[40]).alpha(0.4).rgb().string(),
+        // Text and icons against purple shaded container
+        onPurpleShadedContainer: BLUIColors.purple[80],
+        // Purple color against purple outlined container's outline
+        purpleOutlinedContainerOutline: BLUIColors.purple[50],
+        // Text and icons against purple outlined container's outline
+        onPurpleOutlinedContainer: BLUIColors.purple[70],
+        // Neutral color against neutral filled surface
+        neutralFilledContainer: BLUIColors.neutral[50],
+        // Text and icons against neutral filled container
+        onNeutralFilledContainer: BLUIColors.neutral[100],
+        // Neutral color against neutral shaded surface
+        neutralShadedContainer: Color(BLUIColors.neutral[50]).alpha(0.4).rgb().string(),
+        // Text and icons against neutral shaded container
+        onNeutralShadedContainer: BLUIColors.neutral[80],
+        // Neutral color against neutral outlined container's outline
+        neutralOutlinedContainerOutline: BLUIColors.neutralVariant[60],
+        // Text and icons against Neutral outlined container's outline
+        onNeutralOutlinedContainer: BLUIColors.neutralVariant[70],
     },
 };
