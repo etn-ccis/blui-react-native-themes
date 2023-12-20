@@ -65,53 +65,17 @@ In order for these components to look correct in your application, you should us
 
 ### TypeScript
 
-Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to add the following [global augmentation](https://callstack.github.io/react-native-paper/theming.html#typescript) in your project's index.tsx file:
+Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to use useExtendedTheme() hook in your project:
 
 ```tsx
-declare global {
-    namespace ReactNativePaper {
-        interface ThemeColors {
-            primaryPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            accentPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            errorPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            divider: string;
-            textPalette: {
-                primary: string;
-                secondary: string;
-                onPrimary: {
-                    light: string;
-                    main: string;
-                    dark: string;
-                };
-                disabled: string;
-            };
-            actionPalette: {
-                active: string;
-                background: string;
-                disabled: string;
-                disabledBackground: string;
-            };
-            overrides: $DeepPartial<ThemeOverrides>;
-            opacity: Partial<ThemeOpacity>;
-        }
-        interface ThemeFonts {
-            bold: ThemeFont;
-        }
-    }
-}
+import { useExtendedTheme } from '@brightlayer-ui/react-native-themes';
+...
+theme = useExtendedTheme();
+<Button mode="contained" style={{ backgroundColor: theme.colors.onOrangeFilledContainer }}>
+    Label
+</Button>
 ```
+
 
 <!--
 ## Demo
