@@ -121,15 +121,15 @@ export const MD3BluiLightTheme = {
         disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
         // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
-        // Attention-grabbing fill color against error filled surface
+        // Attention-grabbing color against error filled surface
         errorFilledContainer: BLUIColors.error[40],
         // Text and icons against error filled container
         onErrorFilledContainer: BLUIColors.error[100],
-        // Attention-grabbing fill color against error shaded surface
+        // Attention-grabbing color against error shaded surface
         errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.15).rgb().string(),
         // Text and icons against error shaded container
         onErrorShadedContainer: BLUIColors.error[30],
-        // Attention-grabbing fill color against error outlined container's outline
+        // Attention-grabbing color against error outlined container
         errorOutlinedContainerOutline: BLUIColors.error[40],
         // Text and icons against error outlined container
         onErrorOutlinedContainer: BLUIColors.error[40],
@@ -153,19 +153,19 @@ export const MD3BluiLightTheme = {
         warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.5).rgb().string(),
         // Text and icons against warning shaded container
         onWarningShadedContainer: BLUIColors.warning[30],
-        // Warning color against warning outlined container's outline
+        // Warning color against warning outlined container
         warningOutlinedContainerOutline: BLUIColors.warning[80],
-        // Text and icons against warning outlined container's outline
+        // Text and icons against warning outlined container
         onWarningOutlinedContainer: BLUIColors.warning[40],
-        // Attention-grabbing fill color against success filled container
+        // Attention-grabbing color against success filled container
         successFilledContainer: BLUIColors.success[50],
         // Text and icons against success filled container
         onSuccessFilledContainer: BLUIColors.success[100],
-        // Attention-grabbing fill color against success shaded surface
+        // Attention-grabbing color against success shaded surface
         successShadedContainer: Color(BLUIColors.success[40]).alpha(0.15).rgb().string(),
         // Attention-grabbing label color against success shaded surface
         successShadedLabel: BLUIColors.success[30],
-        // Attention-grabbing fill color against success container's outline
+        // Attention-grabbing color against success container
         successOutlinedContainerOutline: BLUIColors.success[50],
         // Text and icons against success outlined container
         onSuccessOutlinedContainer: BLUIColors.success[40],
@@ -177,9 +177,9 @@ export const MD3BluiLightTheme = {
         primaryShadedContainer: Color(BLUIColors.primary[40]).alpha(0.15).rgb().string(),
         // Text and icons against primary shaded container
         onPrimaryShadedContainer: BLUIColors.primary[30],
-        // Primary color against primary outlined container's outline
+        // Primary color against primary outlined container
         primaryOutlinedContainerOutline: BLUIColors.primary[50],
-        // Text and icons against primary outlined container's outline
+        // Text and icons against primary outlined container
         onPrimaryOutlinedContainer: BLUIColors.primary[40],
         // Purple color against purple filled surface
         purpleFilledContainer: BLUIColors.purple[50],
@@ -189,9 +189,9 @@ export const MD3BluiLightTheme = {
         purpleShadedContainer: Color(BLUIColors.purple[40]).alpha(0.15).rgb().string(),
         // Text and icons against purple shaded container
         onPurpleShadedContainer: BLUIColors.purple[30],
-        // Purple color against purple outlined container's outline
+        // Purple color against purple outlined container
         purpleOutlinedContainerOutline: BLUIColors.purple[50],
-        // Text and icons against purple outlined container's outline
+        // Text and icons against purple outlined container
         onPurpleOutlinedContainer: BLUIColors.purple[40],
         // Neutral color against neutral filled surface
         neutralFilledContainer: BLUIColors.neutral[50],
@@ -201,9 +201,9 @@ export const MD3BluiLightTheme = {
         neutralShadedContainer: Color(BLUIColors.neutral[50]).alpha(0.2).rgb().string(),
         // Text and icons against neutral shaded container
         onNeutralShadedContainer: BLUIColors.neutral[30],
-        // Neutral color against neutral outlined container's outline
+        // Neutral color against neutral outlined container
         neutralOutlinedContainerOutline: BLUIColors.neutralVariant[50],
-        // Text and icons against Neutral outlined container's outline
+        // Text and icons against Neutral outlined container
         onNeutralOutlinedContainer: BLUIColors.neutralVariant[30],
     },
 };
