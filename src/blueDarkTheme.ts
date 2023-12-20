@@ -8,7 +8,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 
 import { MD3DarkTheme, configureFonts } from 'react-native-paper';
 import { fontConfig } from './shared';
-import { BLUIColors } from '@brightlayer-ui/colors';
+import BLUIColors from '@brightlayer-ui/colors';
 import Color from 'color';
 
 export const MD3BluiDarkTheme = {
@@ -121,6 +121,10 @@ export const MD3BluiDarkTheme = {
         disabledContainer: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
         // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
+        // Can be used on slider and range selector track
+        sliderTrack: BLUIColors.neutral[30],
+        // Disabled version of slider track color variant
+        sliderTrackDisabled: Color(BLUIColors.neutral[30]).alpha(0.5).rgb().string(),
         // Attention-grabbing color against error filled surface
         errorFilledContainer: BLUIColors.error[40],
         // Text and icons against error filled container

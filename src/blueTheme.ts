@@ -121,6 +121,10 @@ export const MD3BluiLightTheme = {
         disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
         // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
+        // Can be used on slider and range selector track
+        sliderTrack: BLUIColors.neutral[80],
+        // Disabled version of slider track color variant
+        sliderTrackDisabled: Color(BLUIColors.neutral[80]).alpha(0.3).rgb().string(),
         // Attention-grabbing color against error filled surface
         errorFilledContainer: BLUIColors.error[40],
         // Text and icons against error filled container
