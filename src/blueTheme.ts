@@ -119,11 +119,95 @@ export const MD3BluiLightTheme = {
         surfaceContainerHighest: BLUIColors.neutral[90],
         // This is alias for surface disabled, used as disabled container background
         disabledContainer: Color(BLUIColors.neutral[10]).alpha(0.05).rgb().string(),
-        // Text and icons against disabled container
+        // Text and icons against disable container
         onDisabledContainer: Color(BLUIColors.neutral[10]).alpha(0.25).rgb().string(),
         // Can be used on slider and range selector track
         sliderTrack: BLUIColors.neutral[80],
         // Disabled version of slider track color variant
         sliderTrackDisabled: Color(BLUIColors.neutral[80]).alpha(0.3).rgb().string(),
+        // Attention-grabbing color against error filled surface
+        errorFilledContainer: BLUIColors.error[40],
+        // Text and icons against error filled container
+        onErrorFilledContainer: BLUIColors.error[100],
+        // Attention-grabbing color against error shaded surface
+        errorShadedContainer: Color(BLUIColors.error[40]).alpha(0.15).rgb().string(),
+        // Text and icons against error shaded container
+        onErrorShadedContainer: BLUIColors.error[30],
+        // Attention-grabbing color against error outlined container
+        errorOutlinedContainerOutline: BLUIColors.error[40],
+        // Text and icons against error outlined container
+        onErrorOutlinedContainer: BLUIColors.error[40],
+        // Orange color against orange filled surface
+        orangeFilledContainer: BLUIColors.orange[70],
+        // Text and icons against orange filled container
+        onOrangeFilledContainer: BLUIColors.orange[20],
+        // Orange color against orange shaded surface
+        orangeShadedContainer: Color(BLUIColors.orange[70]).alpha(0.2).rgb().string(),
+        // Text and icons against orange shaded container
+        onOrangeShadedContainer: BLUIColors.orange[30],
+        // Orange color against orange outlined surface
+        orangeOutlinedContainer: BLUIColors.orange[70],
+        // Text and icons against orange outlined container
+        onOrangeOutlinedContainer: BLUIColors.orange[40],
+        // Warning color against warning filled surface
+        warningFilledContainer: BLUIColors.warning[90],
+        // Text and icons against warning filled container
+        onWarningFilledContainer: BLUIColors.warning[30],
+        // Warning color against warning shaded surface
+        warningShadedContainer: Color(BLUIColors.warning[90]).alpha(0.5).rgb().string(),
+        // Text and icons against warning shaded container
+        onWarningShadedContainer: BLUIColors.warning[30],
+        // Warning color against warning outlined container
+        warningOutlinedContainerOutline: BLUIColors.warning[80],
+        // Text and icons against warning outlined container
+        onWarningOutlinedContainer: BLUIColors.warning[40],
+        // Attention-grabbing color against success filled container
+        successFilledContainer: BLUIColors.success[50],
+        // Text and icons against success filled container
+        onSuccessFilledContainer: BLUIColors.success[100],
+        // Attention-grabbing color against success shaded surface
+        successShadedContainer: Color(BLUIColors.success[40]).alpha(0.15).rgb().string(),
+        // Attention-grabbing label color against success shaded surface
+        successShadedLabel: BLUIColors.success[30],
+        // Attention-grabbing color against success container
+        successOutlinedContainerOutline: BLUIColors.success[50],
+        // Text and icons against success outlined container
+        onSuccessOutlinedContainer: BLUIColors.success[40],
+        // Primary color against primary filled surface
+        primaryFilledContainer: BLUIColors.primary[50],
+        // Text and icons against primary filled container
+        onPrimaryFilledContainer: BLUIColors.primary[100],
+        // Primary color against primary shaded surface
+        primaryShadedContainer: Color(BLUIColors.primary[40]).alpha(0.15).rgb().string(),
+        // Text and icons against primary shaded container
+        onPrimaryShadedContainer: BLUIColors.primary[30],
+        // Primary color against primary outlined container
+        primaryOutlinedContainerOutline: BLUIColors.primary[50],
+        // Text and icons against primary outlined container
+        onPrimaryOutlinedContainer: BLUIColors.primary[40],
+        // Purple color against purple filled surface
+        purpleFilledContainer: BLUIColors.purple[50],
+        // Text and icons against purple filled container
+        onPurpleFilledContainer: BLUIColors.purple[100],
+        // Purple color against purple shaded surface
+        purpleShadedContainer: Color(BLUIColors.purple[40]).alpha(0.15).rgb().string(),
+        // Text and icons against purple shaded container
+        onPurpleShadedContainer: BLUIColors.purple[30],
+        // Purple color against purple outlined container
+        purpleOutlinedContainerOutline: BLUIColors.purple[50],
+        // Text and icons against purple outlined container
+        onPurpleOutlinedContainer: BLUIColors.purple[40],
+        // Neutral color against neutral filled surface
+        neutralFilledContainer: BLUIColors.neutral[50],
+        // Text and icons against neutral filled container
+        onNeutralFilledContainer: BLUIColors.neutral[100],
+        // Neutral color against neutral shaded surface
+        neutralShadedContainer: Color(BLUIColors.neutral[50]).alpha(0.2).rgb().string(),
+        // Text and icons against neutral shaded container
+        onNeutralShadedContainer: BLUIColors.neutral[30],
+        // Neutral color against neutral outlined container
+        neutralOutlinedContainerOutline: BLUIColors.neutralVariant[50],
+        // Text and icons against Neutral outlined container
+        onNeutralOutlinedContainer: BLUIColors.neutralVariant[30],
     },
 };

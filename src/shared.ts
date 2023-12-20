@@ -104,7 +104,7 @@ export const fontConfig = {
     },
 };
 
-export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
+export type ExtendedTheme = Omit<MD3Theme, 'colors'> & {
     colors: {
         primary: string;
         primaryContainer: string;
@@ -177,6 +177,8 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
         surfaceContainerHighest: string;
         disabledContainer: string;
         onDisabledContainer: string;
+        sliderTrack: string;
+        sliderTrackDisabled: string;
         errorFilledContainer: string;
         onErrorFilledContainer: string;
         errorShadedContainer: string;
@@ -219,11 +221,6 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors' | 'fonts'> & {
         onNeutralShadedContainer: string;
         neutralOutlinedContainerOutline: string;
         onNeutralOutlinedContainer: string;
-        sliderTrack: string;
-        sliderTrackDisabled: string;
-    };
-    fonts: MD3Typescale & {
-        customVariant: MD3Type;
     };
 };
 
