@@ -209,5 +209,11 @@ export const MD3BluiLightTheme = {
         neutralOutlinedContainerOutline: BLUIColors.neutralVariant[50],
         // Text and icons against Neutral outlined container
         onNeutralOutlinedContainer: BLUIColors.neutralVariant[30],
+        // Standout fill text field color against surface
+        textFieldContainer: Color(BLUIColors.neutral[80]).alpha(0.4).rgb().string(),
+        // Black color variant
+        blackLightWhiteDark: BLUIColors.primary[0],
+        // White color variant
+        whiteLightBlackDark: BLUIColors.primary[100],
     },
 };
