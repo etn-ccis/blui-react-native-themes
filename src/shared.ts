@@ -222,8 +222,8 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors'> & {
         neutralOutlinedContainerOutline: string;
         onNeutralOutlinedContainer: string;
         textFieldContainer: string;
-        blackLightWhiteDark: string;
-        whiteLightBlackDark: string;
+        progressBarTrackOnStatusFilledContainer: string;
+        mapTextOutline: string;
     };
 };
 

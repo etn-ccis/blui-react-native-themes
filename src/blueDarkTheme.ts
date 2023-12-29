@@ -211,9 +211,9 @@ export const MD3BluiDarkTheme = {
         onNeutralOutlinedContainer: BLUIColors.neutralVariant[70],
         // Standout fill text field color against surface
         textFieldContainer: Color(BLUIColors.neutral[80]).alpha(0.2).rgb().string(),
-        // Black color variant
-        blackLightWhiteDark: BLUIColors.primary[100],
-        // White color variant
-        whiteLightBlackDark: BLUIColors.primary[0],
+        // Progress bar track on status color against filled surface
+        progressBarTrackOnStatusFilledContainer: Color(BLUIColors.primary[0]).alpha(0.25).rgb().string(),
+        // Text outline color variant
+        mapTextOutline: Color(BLUIColors.primary[0]).alpha(0.7).rgb().string(),
     },
 };
