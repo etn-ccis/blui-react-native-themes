@@ -209,5 +209,11 @@ export const MD3BluiLightTheme = {
         neutralOutlinedContainerOutline: BLUIColors.neutralVariant[50],
         // Text and icons against Neutral outlined container
         onNeutralOutlinedContainer: BLUIColors.neutralVariant[30],
+        // Standout fill text field color against surface
+        textFieldContainer: Color(BLUIColors.neutral[80]).alpha(0.4).rgb().string(),
+        // Progress bar track on status color against filled surface
+        progressBarTrackOnStatusFilledContainer: Color(BLUIColors.primary[0]).alpha(0.25).rgb().string(),
+        // Text outline color variant
+        mapTextOutline: Color(BLUIColors.primary[100]).alpha(0.7).rgb().string(),
     },
 };
