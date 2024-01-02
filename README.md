@@ -113,6 +113,10 @@ declare global {
 }
 ```
 
+### Upgrading from version 6 -> 7
+
+In the version 7, the library has been updated to use [React Native Paper](https://callstack.github.io/react-native-paper/) v5, which is adopting [Material Design 3](https://m3.material.io/). The themes have now been updated to use Material Design 3 Themes.
+
 <!--
 ## Demo
 
