@@ -70,7 +70,7 @@ Our Brightlayer UI themes extend the themes provided by React Native Paper. If y
 ```tsx
 import { useExtendedTheme } from '@brightlayer-ui/react-native-themes';
 ...
-theme = useExtendedTheme();
+const theme = useExtendedTheme();
 <Button mode="contained" style={{ backgroundColor: theme.colors.onOrangeFilledContainer }}>
     Label
 </Button>
