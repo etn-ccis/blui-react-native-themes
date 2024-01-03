@@ -65,7 +65,7 @@ In order for these components to look correct in your application, you should us
 
 ### TypeScript
 
-Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to use useExtendedTheme() hook in your project:
+Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to use useExtendedTheme hook in your project:
 
 ```tsx
 import { useExtendedTheme } from '@brightlayer-ui/react-native-themes';
@@ -75,7 +75,6 @@ theme = useExtendedTheme();
     Label
 </Button>
 ```
-
 
 <!--
 ## Demo
