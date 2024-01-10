@@ -39,10 +39,6 @@ export const MD3BluiDarkTheme = {
         onSurface: BLUIColors.neutral[95],
         surfaceVariant: BLUIColors.neutralVariant[30],
         onSurfaceVariant: BLUIColors.neutralVariant[70],
-        // surfaceDisabled is the same as disabledContainer in design files
-        surfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
-        // onSurfaceDisabled is the same as onDisabledContainer in design files
-        onSurfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
         outline: BLUIColors.neutralVariant[60],
         outlineVariant: Color(BLUIColors.neutralVariant[60]).alpha(0.25).rgb().string(),
         shadow: BLUIColors.primary[0],
@@ -58,6 +54,11 @@ export const MD3BluiDarkTheme = {
             level4: BLUIColors.neutral[17],
             level5: BLUIColors.neutral[20],
         },
+        // surfaceDisabled is the same as disabledContainer in design files
+        surfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.1).rgb().string(),
+        // onSurfaceDisabled is the same as onDisabledContainer in design files
+        onSurfaceDisabled: Color(BLUIColors.neutral[95]).alpha(0.15).rgb().string(),
+        backdrop: Color(BLUIColors.primary[0]).alpha(0.32).rgb().string(),
 
         // Custom color variants
         // High-emphasis primary non-text variant, can be used on non-text elements like icons
