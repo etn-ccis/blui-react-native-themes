@@ -48,10 +48,15 @@ export const MD3BluiDarkTheme = {
         inversePrimary: BLUIColors.primary[40],
         elevation: {
             level0: 'transparent',
+            // level1 is the same as surfaceContainerLowest in design files
             level1: BLUIColors.neutral[4],
+            // level2 is the same as surfaceContainerLow in design files
             level2: BLUIColors.neutral[10],
+            // level3 is the same as surfaceContainer in design files
             level3: BLUIColors.neutral[12],
+            // level4 is the same as surfaceContainerHigh in design files
             level4: BLUIColors.neutral[17],
+            // level5 is the same as surfaceContainerHighest in design files
             level5: BLUIColors.neutral[20],
         },
         // surfaceDisabled is the same as disabledContainer in design files
