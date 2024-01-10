@@ -53,7 +53,7 @@ These style overriden components simplify this process so that the end user do n
         navigationState={{ index, routes }}
         onIndexChange={setIndex}
         renderScene={renderScene}
-        />
+    />
     ```
 
 - **Button**
@@ -76,7 +76,7 @@ These style overriden components simplify this process so that the end user do n
         mode="contained"
        buttonColor={theme.colors.error}
         textColor={theme.colors.onError}
-        >
+    >
         Label
     </Button>
     <Button mode="contained" disabled >
@@ -101,7 +101,7 @@ These style overriden components simplify this process so that the end user do n
     <Button
         mode="outlined"
         textColor={theme.colors.error}
-        >
+    >
         Label
     </Button>
     <Button mode="outlined" disabled>
@@ -126,7 +126,7 @@ These style overriden components simplify this process so that the end user do n
     <Button
         mode="text"
         textColor={theme.colors.error}
-        >
+    >
         Label
     </Button>
     <Button mode="text" disabled>
@@ -150,7 +150,7 @@ These style overriden components simplify this process so that the end user do n
     <Button
         mode="elevated"
         buttonColor={theme.colors.surfaceContainerLow}
-        >
+    >
         Label
     </Button>
     <Button
@@ -304,7 +304,7 @@ These style overriden components simplify this process so that the end user do n
             onPress: (): void => {},
         }}
         style={{ backgroundColor: theme.colors.inverseSurface }}
-        >
+    >
         Snackbar Text
     </Snackbar>
     ````
@@ -359,17 +359,17 @@ These style overriden components simplify this process so that the end user do n
         onChangeText={(value) => {
             setErrorFilledText(value);
             setHasError(value.length > 4);
-            }}
+        }}
         error={hasError}
         style={{backgroundColor: theme.colors.textFieldContainer}}
-        />
-        <HelperText 
-            type="error" 
-            visible={hasError} 
-            style={{marginHorizontal: 8,paddingHorizontal: 16}}
-            >
-            Error Message
-        </HelperText>
+    />
+    <HelperText 
+        type="error" 
+        visible={hasError} 
+        style={{marginHorizontal: 8,paddingHorizontal: 16}}
+    >
+        Error Message
+    </HelperText>
     ```
 
   - #### Outlined Mode
@@ -461,9 +461,9 @@ These style overriden components simplify this process so that the end user do n
             borderWidth: 1,
         }}
         rippleColor={'transparent'}
-        />
+    />
     // style for not selected
-        <ToggleButton
+    <ToggleButton
         icon="format-italic"
         value="italic"
         iconColor={theme.colors.onSurface}
@@ -472,5 +472,5 @@ These style overriden components simplify this process so that the end user do n
             borderWidth: 1,
         }}
         rippleColor={'transparent'}
-        />
+    />
     ````
