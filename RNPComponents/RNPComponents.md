@@ -18,7 +18,7 @@ These style overriden components simplify this process so that the end user do n
     * Text color of the Avatar for Error Filled Avatar: onError
     * Background color of the Avatar for Error Filled Avatar: error
 
-    <img width='300' alt="Avatar" src="./images/avatar.png"><br/>
+    <img width='300' alt="Avatar" src="./Images/avatar.png"><br/>
 
     Usage
     ```tsx
@@ -41,7 +41,7 @@ These style overriden components simplify this process so that the end user do n
     * Active color of the selected tab text: primary
     * Background color of the Navigation Bar: surfaceContainer
 
-    <img width='300' alt="Bottom Navigation" src="./images/bottomNavigation.png"><br/>
+    <img width='300' alt="Bottom Navigation" src="./Images/bottomNavigation.png"><br/>
 
     Usage
     ```tsx
@@ -63,7 +63,7 @@ These style overriden components simplify this process so that the end user do n
     - text color of the error contained button: onError
 
 
-    <img width='300' alt="Button Contained Mode" src="./images/buttonContained.png"><br/>
+    <img width='300' alt="Button Contained Mode" src="./Images/buttonContained.png"><br/>
 
     Usage
     ```tsx
@@ -89,7 +89,7 @@ These style overriden components simplify this process so that the end user do n
     Recommended style overrides:
     * text color of the error outlined button: error
 
-    <img width='300' alt="Button Outlined Mode" src="./images/buttonOutline.png"><br/>
+    <img width='300' alt="Button Outlined Mode" src="./Images/buttonOutline.png"><br/>
 
     Usage
     ```tsx
@@ -114,7 +114,7 @@ These style overriden components simplify this process so that the end user do n
     Recommended style overrides:
     * text color of the error text button: error
 
-    <img width='300' alt="Button Text Mode" src="./images/buttonText.png"><br/>
+    <img width='300' alt="Button Text Mode" src="./Images/buttonText.png"><br/>
 
     Usage
     ```tsx
@@ -141,7 +141,7 @@ These style overriden components simplify this process so that the end user do n
     * button color of the error elevated button: surfaceContainerLow
     * button color of the disabled elevated button: surfaceContainerLow
 
-    <img width='300' alt="Button Elevated Mode" src="./images/buttonElevated.png"><br/>
+    <img width='300' alt="Button Elevated Mode" src="./Images/buttonElevated.png"><br/>
 
     Usage
     ```tsx
@@ -175,7 +175,7 @@ These style overriden components simplify this process so that the end user do n
     * text color of the error text button: onErrorContainer
     * button color of the error text button: errorContainer
 
-    <img width='300' alt="Button Contained-tonal Mode" src="./images/buttonTonal.png"><br/>
+    <img width='300' alt="Button Contained-tonal Mode" src="./Images/buttonTonal.png"><br/>
 
     Usage
     ```tsx
@@ -202,7 +202,7 @@ These style overriden components simplify this process so that the end user do n
     * Text color of Table Title: onSurface
     * font size of Table Title: theme.fonts.labelLarge
 
-    <img width='300' alt="Data Table" src="./images/dataTable.png"><br/>
+    <img width='300' alt="Data Table" src="./Images/dataTable.png"><br/>
 
     Usage
     ```tsx
@@ -258,7 +258,7 @@ These style overriden components simplify this process so that the end user do n
     * background color for contained-tonal mode: primaryContainer
     * icon color for contained-tonal mode: onPrimaryContainer
 
-    <img width='300' alt="IconButton" src="./images/iconButton.png"><br/>
+    <img width='300' alt="IconButton" src="./Images/iconButton.png"><br/>
 
     Usage
     ```tsx
@@ -275,7 +275,7 @@ These style overriden components simplify this process so that the end user do n
     Recommended style overrides:
     * background color of the track: surfaceContainerHighest
 
-    <img width='300' alt="ProgressBar" src="./images/progressBar.png"><br/>
+    <img width='300' alt="ProgressBar" src="./Images/progressBar.png"><br/>
 
     Usage
     ```tsx
@@ -293,7 +293,7 @@ These style overriden components simplify this process so that the end user do n
     * background color of the SnackBar: inverseSurface
 
 
-    <img width='300' alt="Snackbar" src="./images/snackbar.png"><br/>
+    <img width='300' alt="Snackbar" src="./Images/snackbar.png"><br/>
 
     ````tsx
     import { Snackbar } from 'react-native-paper';
@@ -325,7 +325,7 @@ These style overriden components simplify this process so that the end user do n
     - Horizontal Padding for Helper Text: 16,
 
 
-    <img width='300' alt="Button Contained Mode" src="./images/flatTextInput.png"><br/>
+    <img width='300' alt="Button Contained Mode" src="./Images/flatTextInput.png"><br/>
 
     Usage
     ```tsx
@@ -384,7 +384,7 @@ These style overriden components simplify this process so that the end user do n
     - Horizontal Margin for Helper Text: 8,
     - Horizontal Padding for Helper Text: 16,
 
-    <img width='300' alt="Button Outlined TextInput" src="./images/outlineTextInput.png"><br/>
+    <img width='300' alt="Button Outlined TextInput" src="./Images/outlineTextInput.png"><br/>
 
     Usage
     ```tsx
@@ -446,7 +446,7 @@ These style overriden components simplify this process so that the end user do n
     * icon color of the ToggleButton for non selected: onSurface
 
 
-    <img width='200' alt="toggleButton" src="./images/toggleButton.png"><br/>
+    <img width='200' alt="toggleButton" src="./Images/toggleButton.png"><br/>
 
     ````tsx
     import { ToggleButton } from 'react-native-paper';
