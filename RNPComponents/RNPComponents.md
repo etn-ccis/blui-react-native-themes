@@ -139,7 +139,6 @@ These styles override components will simplify this process so that the end user
     * Button color of the Elevated Button: surfaceContainerLow
     * Text color of the Error Elevated Button: error
     * Button color of the Error Elevated Button: surfaceContainerLow
-    * Button color of the Disabled Elevated Button: surfaceContainerLow
 
     <img width='300' alt="Button Elevated Mode" src="./Images/buttonElevated.png"><br/>
 
@@ -163,7 +162,6 @@ These styles override components will simplify this process so that the end user
     <Button
         mode="elevated"
         disabled
-        buttonColor={theme.colors.surfaceContainerLow}
     >
         Label
     </Button>
@@ -201,6 +199,12 @@ These styles override components will simplify this process so that the end user
     Recommended style overrides:
     * Text color of Table Title: onSurface
     * Font size of Table Title: theme.fonts.labelLarge
+    * Font size of Table Cell: theme.fonts.bodyMedium
+    * Font for pagination Label needs to passed inside Text component: ```
+    <Text style={{ ...theme.fonts.bodyMedium }}></Text>```
+    * Font for pagination selectPageDropdownLabel needs to passed inside Text component: ```
+    <Text style={{ ...theme.fonts.bodyMedium }}></Text>```
+    
 
     <img width='300' alt="Data Table" src="./Images/dataTable.png"><br/>
 
@@ -231,21 +235,29 @@ These styles override components will simplify this process so that the end user
 
         {items.slice(from, to).map((item) => (
             <DataTable.Row key={item.key}>
-                <DataTable.Cell>{item.name}</DataTable.Cell>
-                <DataTable.Cell numeric>{item.calories}</DataTable.Cell>
-                <DataTable.Cell numeric>{item.fat}</DataTable.Cell>
+                <DataTable.Cell textStyle={{ ...theme.fonts.bodyMedium }} >{item.name}</DataTable.Cell>
+                <DataTable.Cell textStyle={{ ...theme.fonts.bodyMedium }} >{item.calories}</DataTable.Cell>
+                <DataTable.Cell textStyle={{ ...theme.fonts.bodyMedium }} numeric>{item.fat}</DataTable.Cell>
             </DataTable.Row>
         ))}
 
         <DataTable.Pagination
             page={page}
             numberOfPages={Math.ceil(items.length / itemsPerPage)}
-            label={`${from + 1}-${to} of ${items.length}`}
+            label={
+                <Text style={{ ...theme.fonts.bodyMedium }}>
+                    {`${from + 1}-${to} of ${items.length}`}
+                </Text>
+            }
             numberOfItemsPerPageList={numberOfItemsPerPageList}
             numberOfItemsPerPage={itemsPerPage}
             onItemsPerPageChange={onItemsPerPageChange}
             showFastPaginationControls
-            selectPageDropdownLabel={'Rows per page'}
+            selectPageDropdownLabel={
+                <Text style={{ ...theme.fonts.bodyMedium }}>
+                Rows per page
+                </Text>
+            }
         />
     </DataTable>
     ```
@@ -375,11 +387,8 @@ These styles override components will simplify this process so that the end user
   - #### Outlined Mode
 
     Recommended style overrides:
-    - Underline color of Outlined Text Input: onSurfaceVariant
     - BackgroundColor of Outlined Text Input: transparent
-    - Underline color of Disabled Outlined Text Input: onSurfaceVariant
     - BackgroundColor of Disabled Outlined Text Input: transparent
-    - Underline color of Error Outlined Text Input: onSurfaceVariant
     - BackgroundColor of Error Outlined Text Input: transparent
     - Horizontal Margin for Helper Text: 8,
     - Horizontal Padding for Helper Text: 16,
@@ -394,7 +403,6 @@ These styles override components will simplify this process so that the end user
         label="TextInput"
         mode="outlined"
         value={normalFilledText}
-        underlineColor={theme.colors.onSurfaceVariant}
         onChangeText={(value) => setNormalFilledText(value)}
         style={{
             margin: 8,
@@ -406,7 +414,6 @@ These styles override components will simplify this process so that the end user
         label="TextInput"
         mode="outlined"
         value={disabledFilledText}
-        underlineColor={theme.colors.onSurfaceVariant}
         onChangeText={(value) => setDisabledFilledText(value)}
         disabled
         style={{
@@ -419,7 +426,6 @@ These styles override components will simplify this process so that the end user
         label="TextInput"
         mode="outlined"
         value={errorFilledText}
-        underlineColor={theme.colors.onSurfaceVariant}
         onChangeText={(value) => {
             setErrorFilledText(value);
             setHasError(value.length > 4);
