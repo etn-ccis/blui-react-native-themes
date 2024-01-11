@@ -1,10 +1,10 @@
 # React Native Paper Component Templates
 
-This Document contains a set of style override in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
+This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
 
-By default, the theming mechanism provided by RNP is very minimal and does not allow us to style components precisely the way we want for Brightlayer UI applications. To circumvent this issue, we create a style overriden components that you can use bring them in alignment with Brightlayer UI applications
+By default, the theming mechanism provided by RNP is very minimal and does not allow us to style components precisely the way we want for Brightlayer UI applications. To circumvent this issue, we create styles override components that the end user can use to bring them in alignment with Brightlayer UI applications
 
-These style overriden components simplify this process so that the end user do not create the component designs to bring them in alignment with Brightlayer UI applications.
+These styles override components will simplify this process so that the end user does not create the component designs to bring them in alignment with Brightlayer UI applications.
 
 ## Component Template
 
@@ -38,7 +38,7 @@ These style overriden components simplify this process so that the end user do n
 - ###  Bottom Navigation
 
     Recommended style overrides:
-    * Active color of the selected tab text: primary
+    * Active color of the Selected Tab Text: primary
     * Background color of the Navigation Bar: surfaceContainer
 
     <img width='300' alt="Bottom Navigation" src="./Images/bottomNavigation.png"><br/>
@@ -59,8 +59,8 @@ These style overriden components simplify this process so that the end user do n
 - **Button**
   - #### Contained Mode
     Recommended style overrides:
-    - button color of the error contained button: error
-    - text color of the error contained button: onError
+    - Button color of the Error Contained Button: error
+    - Text color of the Error Contained Button: onError
 
 
     <img width='300' alt="Button Contained Mode" src="./Images/buttonContained.png"><br/>
@@ -87,7 +87,7 @@ These style overriden components simplify this process so that the end user do n
   - #### Outlined Mode
 
     Recommended style overrides:
-    * text color of the error outlined button: error
+    * Text color of the Error Outlined Button: error
 
     <img width='300' alt="Button Outlined Mode" src="./Images/buttonOutline.png"><br/>
 
@@ -112,7 +112,7 @@ These style overriden components simplify this process so that the end user do n
   - #### Text Mode
 
     Recommended style overrides:
-    * text color of the error text button: error
+    * Text color of the Error Text Button: error
 
     <img width='300' alt="Button Text Mode" src="./Images/buttonText.png"><br/>
 
@@ -136,10 +136,10 @@ These style overriden components simplify this process so that the end user do n
   - #### Elevated Mode
 
     Recommended style overrides:
-    * button color of the elevated button: surfaceContainerLow
-    * text color of the error elevated button: error
-    * button color of the error elevated button: surfaceContainerLow
-    * button color of the disabled elevated button: surfaceContainerLow
+    * Button color of the Elevated Button: surfaceContainerLow
+    * Text color of the Error Elevated Button: error
+    * Button color of the Error Elevated Button: surfaceContainerLow
+    * Button color of the Disabled Elevated Button: surfaceContainerLow
 
     <img width='300' alt="Button Elevated Mode" src="./Images/buttonElevated.png"><br/>
 
@@ -172,8 +172,8 @@ These style overriden components simplify this process so that the end user do n
   - #### Contained Tonal Mode
 
     Recommended style overrides:
-    * text color of the error text button: onErrorContainer
-    * button color of the error text button: errorContainer
+    * Text color of the Error Text Button: onErrorContainer
+    * Button color of the Error Text Button: errorContainer
 
     <img width='300' alt="Button Contained-tonal Mode" src="./Images/buttonTonal.png"><br/>
 
@@ -200,7 +200,7 @@ These style overriden components simplify this process so that the end user do n
 
     Recommended style overrides:
     * Text color of Table Title: onSurface
-    * font size of Table Title: theme.fonts.labelLarge
+    * Font size of Table Title: theme.fonts.labelLarge
 
     <img width='300' alt="Data Table" src="./Images/dataTable.png"><br/>
 
@@ -253,10 +253,10 @@ These style overriden components simplify this process so that the end user do n
 - ###  Icon button
 
     Recommended style overrides:
-    * background color for contained mode: primary
-    * icon color for contained mode: onPrimary
-    * background color for contained-tonal mode: primaryContainer
-    * icon color for contained-tonal mode: onPrimaryContainer
+    * Background color for Contained mode: primary
+    * Icon color for Contained mode: onPrimary
+    * Background color for Contained-tonal mode: primaryContainer
+    * Icon color for Contained-tonal mode: onPrimaryContainer
 
     <img width='300' alt="IconButton" src="./Images/iconButton.png"><br/>
 
@@ -270,10 +270,10 @@ These style overriden components simplify this process so that the end user do n
     <IconButton icon="video" mode='contained-tonal' containerColor={theme.colors.primaryContainer} iconColor={theme.colors.onPrimaryContainer}  />
     ```
 
-- ###  ProgressBar
+- ###  Progress Bar
 
     Recommended style overrides:
-    * background color of the track: surfaceContainerHighest
+    * Background color of the Track: surfaceContainerHighest
 
     <img width='300' alt="ProgressBar" src="./Images/progressBar.png"><br/>
 
@@ -290,7 +290,7 @@ These style overriden components simplify this process so that the end user do n
 - ###  Snackbar
 
     Recommended style overrides:
-    * background color of the SnackBar: inverseSurface
+    * Background color of the SnackBar: inverseSurface
 
 
     <img width='300' alt="Snackbar" src="./Images/snackbar.png"><br/>
@@ -313,14 +313,14 @@ These style overriden components simplify this process so that the end user do n
 
   - #### Flat Mode
     Recommended style overrides:
-    - underline color of Flat Text Input: onSurfaceVariant
-    - text color of Flat Text Input: onSurface
-    - backgroundColor of Flat Text Input: textFieldContainer
-    - underline color of Disabled Flat Text Input: onDisabledContainer
-    - backgroundColor of Disabled Flat Text Input: disabledContainer
-    - underline color of Error Flat Text Input: onSurfaceVariant
-    - text color of Error Flat Text Input: onSurface
-    - backgroundColor of Error Flat Text Input: textFieldContainer
+    - Underline color of Flat Text Input: onSurfaceVariant
+    - Text color of Flat Text Input: onSurface
+    - BackgroundColor of Flat Text Input: textFieldContainer
+    - Underline color of Disabled Flat Text Input: onDisabledContainer
+    - BackgroundColor of Disabled Flat Text Input: disabledContainer
+    - Underline color of Error Flat Text Input: onSurfaceVariant
+    - Text color of Error Flat Text Input: onSurface
+    - BackgroundColor of Error Flat Text Input: textFieldContainer
     - Horizontal Margin for Helper Text: 8,
     - Horizontal Padding for Helper Text: 16,
 
@@ -375,12 +375,12 @@ These style overriden components simplify this process so that the end user do n
   - #### Outlined Mode
 
     Recommended style overrides:
-    - underline color of Outlined Text Input: onSurfaceVariant
-    - backgroundColor of Outlined Text Input: transparent
-    - underline color of Disabled Outlined Text Input: onSurfaceVariant
-    - backgroundColor of Disabled Outlined Text Input: transparent
-    - underline color of Error Outlined Text Input: onSurfaceVariant
-    - backgroundColor of Error Outlined Text Input: transparent
+    - Underline color of Outlined Text Input: onSurfaceVariant
+    - BackgroundColor of Outlined Text Input: transparent
+    - Underline color of Disabled Outlined Text Input: onSurfaceVariant
+    - BackgroundColor of Disabled Outlined Text Input: transparent
+    - Underline color of Error Outlined Text Input: onSurfaceVariant
+    - BackgroundColor of Error Outlined Text Input: transparent
     - Horizontal Margin for Helper Text: 8,
     - Horizontal Padding for Helper Text: 16,
 
@@ -439,11 +439,11 @@ These style overriden components simplify this process so that the end user do n
 - ###  Toggle Button
 
     Recommended style overrides:
-    * borderWidth of ToggleButton: 1
-    * background color of the ToggleButton for selected: primaryContainer
-    * icon color of the ToggleButton for selected: onPrimaryContainer
-    * background color of the ToggleButton for non selected: 'transparent'
-    * icon color of the ToggleButton for non selected: onSurface
+    * BorderWidth of ToggleButton: 1
+    * Background color of the ToggleButton for selected: primaryContainer
+    * Icon color of the ToggleButton for selected: onPrimaryContainer
+    * Background color of the ToggleButton for non selected: 'transparent'
+    * Icon color of the ToggleButton for non selected: onSurface
 
 
     <img width='200' alt="toggleButton" src="./Images/toggleButton.png"><br/>
