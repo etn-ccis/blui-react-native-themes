@@ -1,12 +1,6 @@
-# React Native Paper Component Templates
+## React Native Paper Component Style Overrides
 
-This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
-
-By default, the theming mechanism provided by RNP is very minimal and does not allow us to style components precisely the way we want for Brightlayer UI applications. To circumvent this issue, we create styles override components that the end user can use to bring them in alignment with Brightlayer UI applications
-
-These styles override components will simplify this process so that the end user does not create the component designs to bring them in alignment with Brightlayer UI applications.
-
-## Component Template
+These styles override components will simplify this process so that the end user does not create the component designs to bring them in alignment with Brightlayer UI applications. 
 
 - ### Avatar
 
