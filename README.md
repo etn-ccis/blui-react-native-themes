@@ -55,7 +55,6 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 </ThemeProvider>
 ```
 
-> When using either of these themes, you should use our React Native Paper wrapper components (see below).
 
 ### React Native Paper Components Style Override
 
