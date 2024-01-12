@@ -1,6 +1,6 @@
 ## React Native Paper Component Style Overrides
 
-These styles override components will simplify this process so that the end user does not create the component designs to bring them in alignment with Brightlayer UI applications. 
+These styles override components will simplify this process so that you do not create the component designs to bring them in alignment with Brightlayer UI applications. 
 
 - ### Avatar
 
