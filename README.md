@@ -1,9 +1,9 @@
 # Brightlayer UI themes for React Native applications
 
-[![](https://img.shields.io/circleci/project/github/brightlayer-ui/react-native-themes/master.svg?style=flat)](https://circleci.com/gh/brightlayer-ui/react-native-themes/tree/master)
+[![](https://img.shields.io/circleci/project/github/etn-ccis/blui-react-native-themes/master.svg?style=flat)](https://circleci.com/gh/etn-ccis/blui-react-native-themes/tree/master)
 [![](https://img.shields.io/npm/v/@brightlayer-ui/react-native-themes.svg?label=@brightlayer-ui/react-native-themes&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/react-native-themes)
 
-This package provides theming support for Eaton applications using the Brightlayer UI design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
+This package provides [theming](https://brightlayer-ui.github.io/style/themes) support for Eaton applications using the Brightlayer UI design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
 
 For other frameworks, check out our related packages:
 
@@ -55,66 +55,34 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 </ThemeProvider>
 ```
 
-> When using either of these themes, you should use our React Native Paper wrapper components (see below).
 
-### React Native Paper Wrapper Components
+### React Native Paper Components Style Override
 
-The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for Brightlayer UI applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
+This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
 
-In order for these components to look correct in your application, you should use the [Brightlayer UI wrapper components](https://github.com/brightlayer-ui/react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
+By default, the theming mechanism provided by RNP is very minimal and does not allow us to style components precisely the way we want for Brightlayer UI applications. The theme does not cover all cases to circumvent this issue, for some components, you may need to add extra styles or theme overrides inline that can be used to bring them in alignment with Brightlayer UI applications
+
+To style components listed in the document to look correct in the application, you should use the [Brightlayer UI Components Style Override](https://github.com/etn-ccis/blui-react-native-themes/blob/master/RNPComponents/RNPComponents.md) in place of the respective components from React Native Paper.
 
 ### TypeScript
 
-Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to add the following [global augmentation](https://callstack.github.io/react-native-paper/theming.html#typescript) in your project's index.tsx file:
+Our Brightlayer UI themes extend the themes provided by React Native Paper. If you are using these themes in a TypeScript project and want to access any of the properties that were added to the defaults, you need to use useExtendedTheme hook in your project:
 
 ```tsx
-declare global {
-    namespace ReactNativePaper {
-        interface ThemeColors {
-            primaryPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            accentPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            errorPalette: {
-                light: string;
-                main: string;
-                dark: string;
-            };
-            divider: string;
-            textPalette: {
-                primary: string;
-                secondary: string;
-                onPrimary: {
-                    light: string;
-                    main: string;
-                    dark: string;
-                };
-                disabled: string;
-            };
-            actionPalette: {
-                active: string;
-                background: string;
-                disabled: string;
-                disabledBackground: string;
-            };
-            overrides: $DeepPartial<ThemeOverrides>;
-            opacity: Partial<ThemeOpacity>;
-        }
-        interface ThemeFonts {
-            bold: ThemeFont;
-        }
-    }
-}
+import { useExtendedTheme } from '@brightlayer-ui/react-native-themes';
+...
+const theme = useExtendedTheme();
+<Button mode="contained" style={{ backgroundColor: theme.colors.onOrangeFilledContainer }}>
+    Label
+</Button>
 ```
+
+### Upgrading from version 6 -> 7
+
+In the version 7, the library has been updated to use [React Native Paper](https://callstack.github.io/react-native-paper/) v5, which is adopting [Material Design 3](https://m3.material.io/). The themes have now been updated to use Material Design 3 Themes.
 
 <!--
 ## Demo
 
-[Check it out](https://github.com/brightlayer-ui/react-native-showcase-demo/tree/master)
+[Check it out](https://github.com/etn-ccis/blui-react-native-showcase-demo/tree/master)
 -->

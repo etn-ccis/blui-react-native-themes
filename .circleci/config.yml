@@ -4,7 +4,7 @@ orbs:
 jobs:
     build:
         docker:
-            -   image: circleci/node:12.9.1-browsers
+            -   image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             - restore_cache:
@@ -35,7 +35,7 @@ jobs:
 
     publish:
         docker:
-            -   image: circleci/node:12.9.1-browsers
+            -   image: cimg/node:16.19.1-browsers
         steps:
             - checkout
             -   attach_workspace:
@@ -50,19 +50,6 @@ jobs:
                     command:  |
                         yarn publish:package -b $CIRCLE_BRANCH
 
-    tag:
-        docker:
-            -   image: circleci/node:12.9.1-browsers
-        steps:
-            - checkout
-            - gh/setup
-            -   attach_workspace:
-                    at: .
-            -   run:
-                    name: Tag @brightlayer-ui/react-native-themes
-                    command: |
-                        yarn tag:package -b $CIRCLE_BRANCH -s -blui-react-native-themes
-
 workflows:
     version: 2
     themes:
@@ -76,10 +63,3 @@ workflows:
                           only:
                               - master
                               - dev
-            - tag:
-                  requires:
-                      - publish
-                  filters:
-                      branches:
-                          only:
-                              - master
