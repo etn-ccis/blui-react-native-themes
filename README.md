@@ -57,11 +57,13 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 
 > When using either of these themes, you should use our React Native Paper wrapper components (see below).
 
-### React Native Paper Wrapper Components
+### React Native Paper Components Style Override
 
-The default theme structure for React Native Paper components does not offer us enough control to make some components look exactly the way they should for Brightlayer UI applications. Because of this, we have extended the default theme type definition (see below) and created wrapper components with the correct styles to use in place of some of the standard React Native Paper components.
+This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
 
-In order for these components to look correct in your application, you should use the [Brightlayer UI wrapper components](https://github.com/etn-ccis/blui-react-native-component-library/blob/master/components/src/themed/README.md) in place of the respective components from React Native Paper.
+By default, the theming mechanism provided by RNP is very minimal and does not allow us to style components precisely the way we want for Brightlayer UI applications. The theme does not cover all cases to circumvent this issue, for some components, you may need to add extra styles or theme overrides inline that can be used to bring them in alignment with Brightlayer UI applications
+
+To style components listed in the document to look correct in the application, you should use the [Brightlayer UI Components Style Override](https://github.com/etn-ccis/blui-react-native-themes/blob/master/RNPComponents/RNPComponents.md) in place of the respective components from React Native Paper.
 
 ### TypeScript
 
