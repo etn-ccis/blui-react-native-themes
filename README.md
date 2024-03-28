@@ -55,7 +55,6 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 </ThemeProvider>
 ```
 
-
 ### React Native Paper Components Style Override
 
 This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
@@ -75,6 +74,20 @@ const theme = useExtendedTheme();
 <Button mode="contained" style={{ backgroundColor: theme.colors.onOrangeFilledContainer }}>
     Label
 </Button>
+```
+
+## Changing fontWeight of a Text Element
+
+When you need to change the `fontWeight` of a `Text` element in your application, it's important to note that it should be done through the `fontFamily` property rather than the `fontWeight` property.
+
+The `fontFamily` property allows you to specify the font and its weight. By using the appropriate font family that supports the desired weight, you can achieve the desired fontWeight effect.
+
+For example, if you want to set the fontWeight to "bold", you can use a font family that includes a bold variant, such as:
+
+```tsx
+<Text variant={'headlineLarge'} style={{ fontFamily: 'OpenSans-Bold' }}>
+    headlineLarge
+</Text>
 ```
 
 ### Upgrading from version 6 -> 7
