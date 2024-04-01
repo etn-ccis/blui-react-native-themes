@@ -1,103 +1,87 @@
 import { Platform } from 'react-native';
 
 import { MD3Theme, useTheme } from 'react-native-paper';
-import { MD3Type, MD3Typescale } from 'react-native-paper/lib/typescript/types';
 import { $DeepPartial } from '@callstack/react-theme-provider';
 
 export const fontConfig = {
     displaySmall: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 36,
-        lineHeight: 45,
+        lineHeight: 48,
     },
     displayMedium: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 45,
         lineHeight: 56,
     },
     displayLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
-        fontSize: 54,
-        lineHeight: 68,
-        letterSpacing: 1,
+        fontSize: 57,
+        lineHeight: 72,
+        letterSpacing: -0.25,
     },
     headlineSmall: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
         fontSize: 24,
         lineHeight: 32,
     },
     headlineMedium: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
-        fontSize: 27,
-        lineHeight: 40,
+        fontSize: 28,
+        lineHeight: 36,
     },
     headlineLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
         fontSize: 32,
         lineHeight: 40,
     },
     titleSmall: {
-        fontFamily: 'OpenSans-Regular',
-        fontWeight: '600' as const,
+        fontFamily: 'OpenSans-SemiBold',
         fontSize: 14,
         lineHeight: 20,
         letterSpacing: 0.1,
     },
     titleMedium: {
-        fontFamily: 'OpenSans-Regular',
-        fontWeight: '600' as const,
+        fontFamily: 'OpenSans-SemiBold',
         fontSize: 16,
         lineHeight: 24,
         letterSpacing: 0.15,
     },
     titleLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 22,
         lineHeight: 28,
     },
     labelSmall: {
         fontFamily: 'OpenSans-SemiBold',
-        fontWeight: '600' as const,
         fontSize: 11,
         lineHeight: 16,
         letterSpacing: 0.5,
     },
     labelMedium: {
         fontFamily: 'OpenSans-SemiBold',
-        fontWeight: '600' as const,
         fontSize: 12,
         lineHeight: 16,
         letterSpacing: 0.2,
     },
     labelLarge: {
         fontFamily: 'OpenSans-SemiBold',
-        fontWeight: '600' as const,
         fontSize: 14,
         lineHeight: 20,
         letterSpacing: 0.1,
     },
     bodySmall: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 12,
         lineHeight: 16,
     },
     bodyMedium: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 14,
         lineHeight: 20,
     },
     bodyLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '400' as const,
         fontSize: 16,
         lineHeight: 24,
         letterSpacing: 0.15,
