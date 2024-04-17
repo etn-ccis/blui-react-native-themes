@@ -213,3 +213,37 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors'> & {
 
 export const useExtendedTheme = (overrides?: $DeepPartial<ExtendedTheme>): ExtendedTheme =>
     useTheme<ExtendedTheme>(overrides);
+
+export type bluiFontWeight = '300' | '400' | '600' | '700' | undefined;
+
+export type FontStyle = {
+    fontFamily: string;
+    fontWeight: bluiFontWeight;
+};
+
+export const useFontWeight = (weight: bluiFontWeight): FontStyle => {
+    switch (weight) {
+        case '300':
+            return {
+                fontFamily: 'OpenSans-light',
+                fontWeight: '300',
+            };
+        case '400':
+            return {
+                fontFamily: 'OpenSans-regular',
+                fontWeight: '400',
+            };
+        case '600':
+            return {
+                fontFamily: 'OpenSans-semiBold',
+                fontWeight: '600',
+            };
+        case '700':
+            return {
+                fontFamily: 'OpenSans-bold',
+                fontWeight: '700',
+            };
+        default:
+            throw new Error(`Invalid font weight: ${weight}`);
+    }
+};

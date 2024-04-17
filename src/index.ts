@@ -7,4 +7,4 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 export { MD3BluiLightTheme as blue } from './blueTheme';
 export { MD3BluiDarkTheme as blueDark } from './blueDarkTheme';
-export { ExtendedTheme, useExtendedTheme } from './shared';
+export { ExtendedTheme, useExtendedTheme, useFontWeight } from './shared';
