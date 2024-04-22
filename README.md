@@ -76,16 +76,12 @@ const theme = useExtendedTheme();
 </Button>
 ```
 
-## Changing fontWeight of a Text Element
+## Usage of useFontWeight hook in your project
 
-When you need to change the `fontWeight` of a `Text` element in your application, it's important to note that it should be done through the `fontFamily` property rather than the `fontWeight` property.
-
-The `fontFamily` property allows you to specify the font and its weight. By using the appropriate font family that supports the desired weight, you can achieve the desired fontWeight effect.
-
-For example, if you want to set the fontWeight to "bold", you can use a font family that includes a bold variant, such as:
+When the fontFamily of a Text element in your application needs to be modified, you can use the useFontWeight hook.For instance, to set the fontWeight to "bold", you can utilize the useFontWeight() hook as demonstrated below:
 
 ```tsx
-<Text variant={'headlineLarge'} style={{ fontFamily: 'OpenSans-Bold' }}>
+<Text variant={'headlineLarge'} style={{ ...fontStyleBold }}>
     headlineLarge
 </Text>
 ```
