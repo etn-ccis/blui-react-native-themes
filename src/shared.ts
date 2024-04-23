@@ -57,7 +57,7 @@ export const fontConfig = {
     },
     titleLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '600' as const,
+        fontWeight: '400' as const,
         fontSize: 22,
         lineHeight: 28,
     },
