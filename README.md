@@ -81,6 +81,9 @@ const theme = useExtendedTheme();
 When the fontFamily of a Text element in your application needs to be modified, you can use the useFontWeight hook.For instance, to set the fontWeight to "bold", you can utilize the useFontWeight() hook as demonstrated below:
 
 ```tsx
+import { useFontWeight } from '@brightlayer-ui/react-native-themes';
+...
+const fontStyleBold = useExtendedTheme('700');
 <Text variant={'headlineLarge'} style={{ ...fontStyleBold }}>
     headlineLarge
 </Text>
