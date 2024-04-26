@@ -83,7 +83,7 @@ When the fontFamily of a Text element in your application needs to be modified, 
 ```tsx
 import { useFontWeight } from '@brightlayer-ui/react-native-themes';
 ...
-const fontStyleBold = useExtendedTheme('700');
+const fontStyleBold = useFontWeight('700');
 <Text variant={'headlineLarge'} style={{ ...fontStyleBold }}>
     headlineLarge
 </Text>
