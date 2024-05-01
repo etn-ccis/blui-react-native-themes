@@ -30,7 +30,7 @@ jobs:
         with:
             node-version: ${{ matrix.node-version }}
             cache: 'yarn'
-      - run: yarn install --frozen-lockfile
+      - run: yarn install --immutable
       - run: yarn prettier:check
 
   build_theme_verify_artifacts:
@@ -46,7 +46,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn --frozen-lockfile
+    - run: yarn --immutable
     - run: yarn build
     - name: Save build
       uses: actions/upload-artifact@v3
@@ -77,5 +77,5 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn --frozen-lockfile
+      - run: yarn --immutable
       - run: npm run publish:package -b ${{env.BRANCH}}
