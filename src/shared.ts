@@ -1,7 +1,6 @@
 import { Platform } from 'react-native';
 
 import { MD3Theme, useTheme } from 'react-native-paper';
-import { MD3Type, MD3Typescale } from 'react-native-paper/lib/typescript/types';
 import { $DeepPartial } from '@callstack/react-theme-provider';
 
 export const fontConfig = {
@@ -9,7 +8,7 @@ export const fontConfig = {
         fontFamily: 'OpenSans-Regular',
         fontWeight: '400' as const,
         fontSize: 36,
-        lineHeight: 45,
+        lineHeight: 48,
     },
     displayMedium: {
         fontFamily: 'OpenSans-Regular',
@@ -20,37 +19,37 @@ export const fontConfig = {
     displayLarge: {
         fontFamily: 'OpenSans-Regular',
         fontWeight: '400' as const,
-        fontSize: 54,
-        lineHeight: 68,
-        letterSpacing: 1,
+        fontSize: 57,
+        lineHeight: 72,
+        letterSpacing: -0.25,
     },
     headlineSmall: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
+        fontWeight: '400' as const,
         fontSize: 24,
         lineHeight: 32,
     },
     headlineMedium: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
-        fontSize: 27,
-        lineHeight: 40,
+        fontWeight: '400' as const,
+        fontSize: 28,
+        lineHeight: 36,
     },
     headlineLarge: {
         fontFamily: 'OpenSans-Regular',
-        fontWeight: '500' as const,
+        fontWeight: '400' as const,
         fontSize: 32,
         lineHeight: 40,
     },
     titleSmall: {
-        fontFamily: 'OpenSans-Regular',
+        fontFamily: 'OpenSans-SemiBold',
         fontWeight: '600' as const,
         fontSize: 14,
         lineHeight: 20,
         letterSpacing: 0.1,
     },
     titleMedium: {
-        fontFamily: 'OpenSans-Regular',
+        fontFamily: 'OpenSans-SemiBold',
         fontWeight: '600' as const,
         fontSize: 16,
         lineHeight: 24,
@@ -229,3 +228,42 @@ export type ExtendedTheme = Omit<MD3Theme, 'colors'> & {
 
 export const useExtendedTheme = (overrides?: $DeepPartial<ExtendedTheme>): ExtendedTheme =>
     useTheme<ExtendedTheme>(overrides);
+
+export type bluiFontWeight = '300' | '400' | '600' | '700' | '800' | undefined;
+
+export type FontStyle = {
+    fontFamily: string;
+    fontWeight: bluiFontWeight;
+};
+
+export const useFontWeight = (weight: bluiFontWeight): FontStyle => {
+    switch (weight) {
+        case '300':
+            return {
+                fontFamily: 'OpenSans-Light',
+                fontWeight: '300',
+            };
+        case '400':
+            return {
+                fontFamily: 'OpenSans-Regular',
+                fontWeight: '400',
+            };
+        case '600':
+            return {
+                fontFamily: 'OpenSans-SemiBold',
+                fontWeight: '600',
+            };
+        case '700':
+            return {
+                fontFamily: 'OpenSans-Bold',
+                fontWeight: '700',
+            };
+        case '800':
+            return {
+                fontFamily: 'OpenSans-ExtraBold',
+                fontWeight: '800',
+            };
+        default:
+            throw new Error(`Invalid font weight: ${weight}`);
+    }
+};

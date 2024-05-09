@@ -1,6 +1,6 @@
 # Brightlayer UI themes for React Native applications
 
-[![](https://img.shields.io/circleci/project/github/etn-ccis/blui-react-native-themes/master.svg?style=flat)](https://circleci.com/gh/etn-ccis/blui-react-native-themes/tree/master)
+[![Build](https://github.com/etn-ccis/blui-react-native-themes/actions/workflows/blui-ci.yml/badge.svg?branch=master)](https://github.com/etn-ccis/blui-react-native-themes/actions/workflows/blui-ci.yml)
 [![](https://img.shields.io/npm/v/@brightlayer-ui/react-native-themes.svg?label=@brightlayer-ui/react-native-themes&style=flat)](https://www.npmjs.com/package/@brightlayer-ui/react-native-themes)
 
 This package provides [theming](https://brightlayer-ui.github.io/style/themes) support for Eaton applications using the Brightlayer UI design system. It includes resources for developers using React Native with [react-native-paper](https://www.npmjs.com/package/react-native-paper). This package comes with two theme options: a Blue theme (standard) and a Dark theme.
@@ -55,7 +55,6 @@ import * as BLUIThemes from '@brightlayer-ui/react-native-themes';
 </ThemeProvider>
 ```
 
-
 ### React Native Paper Components Style Override
 
 This Document contains a set of style overrides in components around various [React Native Paper](https://callstack.github.io/react-native-paper/index.html) components.
@@ -75,6 +74,19 @@ const theme = useExtendedTheme();
 <Button mode="contained" style={{ backgroundColor: theme.colors.onOrangeFilledContainer }}>
     Label
 </Button>
+```
+
+## Usage of useFontWeight hook in your project
+
+When the fontFamily of a Text element in your application needs to be modified, you can use the useFontWeight hook.For instance, to set the fontWeight to "bold", you can utilize the useFontWeight() hook as demonstrated below:
+
+```tsx
+import { useFontWeight } from '@brightlayer-ui/react-native-themes';
+...
+const fontStyleBold = useFontWeight('700');
+<Text variant={'headlineLarge'} style={{ ...fontStyleBold }}>
+    headlineLarge
+</Text>
 ```
 
 ### Upgrading from version 6 -> 7

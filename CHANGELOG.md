@@ -1,5 +1,11 @@
 # Changelog
 
+## v7.0.1 (May 9, 2024)
+
+### Fixed
+
+-   Text variants not working correctly on Android [89](https://github.com/etn-ccis/blui-react-native-themes/issues/89).
+
 ## v7.0.0 (January 12, 2024)
 
 ### Changed
