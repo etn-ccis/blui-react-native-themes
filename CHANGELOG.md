@@ -1,6 +1,6 @@
 # Changelog
 
-## v7.0.1 (Unreleased)
+## v7.0.1 (May 9, 2024)
 
 ### Fixed
 
