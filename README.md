@@ -98,3 +98,8 @@ In the version 7, the library has been updated to use [React Native Paper](https
 
 [Check it out](https://github.com/etn-ccis/blui-react-native-showcase-demo/tree/master)
 -->
+
+
+> **Important Migration Notice:**
+>
+> This repository has been migrated to a monorepo to consolidate All the React Native libraries developed by Brightlayer Team into a single workspace. Future development and updates will now occur in the following location: [https://github.com/etn-ccis/blui-react-native/tree/dev/packages/themes]. Please update your bookmarks and contribute to the monorepo for the latest changes.
